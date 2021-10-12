@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Webserver.Config;
+using Webserver.IO;
 
 namespace Webserver
 {
@@ -6,7 +7,7 @@ namespace Webserver
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new Server(new ServerConfigManager(new FileReader(), new FileWriter())).Start();
         }
     }
 }
