@@ -7,20 +7,20 @@ namespace Webserver.Response
     {
         private const string LineDelimiter = "\r\n";
 
-        public byte[] Create(ResponseData responseData)
+        public byte[] Create(ResponseDataHeader responseDataHeader)
         {
             var stringBuilder = new StringBuilder();
 
-            stringBuilder.Append(responseData.Version);
+            stringBuilder.Append(responseDataHeader.Version);
             stringBuilder.Append(' ');
-            stringBuilder.Append((int)responseData.StatusCode);
+            stringBuilder.Append((int)responseDataHeader.StatusCode);
             stringBuilder.Append(' ');
-            stringBuilder.Append(responseData.StatusCode.Humanize(LetterCasing.Title));
+            stringBuilder.Append(responseDataHeader.StatusCode.Humanize(LetterCasing.Title));
             stringBuilder.Append(LineDelimiter);
 
-            if (responseData.Headers != null)
+            if (responseDataHeader.Headers != null)
             {
-                foreach (var (key, value) in responseData.Headers)
+                foreach (var (key, value) in responseDataHeader.Headers)
                 {
                     stringBuilder.Append(key);
                     stringBuilder.Append(": ");
@@ -33,24 +33,7 @@ namespace Webserver.Response
 
             var responseBytes = Encoding.ASCII.GetBytes(stringBuilder.ToString());
 
-            if (responseData.Body == null)
-            {
-                return responseBytes;
-            }
-
-            var finalResponseBytes = new byte[responseBytes.Length + responseData.Body.Length];
-
-            for (var i = 0; i < responseBytes.Length; i++)
-            {
-                finalResponseBytes[i] = responseBytes[i];
-            }
-
-            for (var i = 0; i < responseData.Body.Length; i++)
-            {
-                finalResponseBytes[i + responseBytes.Length] = responseData.Body[i];
-            }
-
-            return finalResponseBytes;
+            return responseBytes;
         }
     }
 }

@@ -2,6 +2,6 @@
 {
     public interface IResponseCreator
     {
-        byte[] Create(ResponseData responseData);
+        byte[] Create(ResponseDataHeader responseDataHeader);
     }
 }
