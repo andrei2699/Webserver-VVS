@@ -36,6 +36,11 @@ namespace Webserver.Config
 
         public void WriteConfig(ServerConfig config)
         {
+            if (config == null)
+            {
+                return;
+            }
+
             var serializedString = JsonSerializer.Serialize(config);
             _fileWriter.Write(ConfigFileName, serializedString);
         }
