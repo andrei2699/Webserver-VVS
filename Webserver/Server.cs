@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using Webserver.Config;
@@ -45,20 +43,16 @@ namespace Webserver
                 var receivedBytes = new byte[1024];
                 socket.Receive(receivedBytes, receivedBytes.Length, 0);
 
-                byte[] headerBytes;
                 try
                 {
                     var requestData = _requestParser.Parse(receivedBytes);
-                    headerBytes = _responseCreator.Create(new ResponseDataHeader(requestData.Version, HttpStatusCode.OK,
-                        new Dictionary<string, string>()));
+                    socket.Send(_responseCreator.Create(requestData));
                 }
                 catch (ServerException serverException)
                 {
-                    headerBytes = _responseCreator.Create(new ResponseDataHeader("HTTP/1.1", serverException.StatusCode,
-                        new Dictionary<string, string>()));
+                    socket.Send(
+                        _responseCreator.Create(new ResponseStatusLine("HTTP/1.1", serverException.StatusCode)));
                 }
-
-                socket.Send(headerBytes);
 
                 socket.Close();
             }

@@ -9,7 +9,12 @@ namespace Webserver
     {
         static void Main(string[] args)
         {
-            new Server(new ServerConfigManager(new FileReader(), new FileWriter()), new RequestParser(), new ResponseCreator()).Start();
+            var fileReader = new FileReader();
+            new Server(
+                    new ServerConfigManager(fileReader, new FileWriter()),
+                    new RequestParser(),
+                    new ResponseCreator(new ResponseHeaderParser(), new FilePathProvider(), fileReader))
+                .Start();
         }
     }
 }

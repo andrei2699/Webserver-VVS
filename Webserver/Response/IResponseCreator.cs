@@ -1,7 +1,11 @@
-﻿namespace Webserver.Response
+﻿using Webserver.Request;
+
+namespace Webserver.Response
 {
     public interface IResponseCreator
     {
-        byte[] Create(ResponseDataHeader responseDataHeader);
+        byte[] Create(RequestData requestData);
+
+        byte[] Create(ResponseStatusLine responseStatusLine);
     }
 }

@@ -1,39 +1,90 @@
-﻿using System.Text;
-using Humanizer;
+﻿using System.Collections.Generic;
+using System.Net;
+using Webserver.IO;
+using Webserver.Request;
 
 namespace Webserver.Response
 {
     public class ResponseCreator : IResponseCreator
     {
-        private const string LineDelimiter = "\r\n";
+        private readonly IResponseHeaderParser _responseHeaderParser;
+        private readonly IFilePathProvider _filePathProvider;
+        private readonly IFileReader _fileReader;
 
-        public byte[] Create(ResponseDataHeader responseDataHeader)
+        public ResponseCreator(IResponseHeaderParser responseHeaderParser, IFilePathProvider filePathProvider,
+            IFileReader fileReader)
         {
-            var stringBuilder = new StringBuilder();
+            _responseHeaderParser = responseHeaderParser;
+            _filePathProvider = filePathProvider;
+            _fileReader = fileReader;
+        }
 
-            stringBuilder.Append(responseDataHeader.Version);
-            stringBuilder.Append(' ');
-            stringBuilder.Append((int)responseDataHeader.StatusCode);
-            stringBuilder.Append(' ');
-            stringBuilder.Append(responseDataHeader.StatusCode.Humanize(LetterCasing.Title));
-            stringBuilder.Append(LineDelimiter);
-
-            if (responseDataHeader.Headers != null)
+        public byte[] Create(RequestData requestData)
+        {
+            try
             {
-                foreach (var (key, value) in responseDataHeader.Headers)
+                var responseStatusLine = new ResponseStatusLine(requestData.Version, HttpStatusCode.OK);
+
+                var requestDataTarget = requestData.Target;
+                var provide = _filePathProvider.Provide(requestDataTarget);
+
+                var headers = new Dictionary<string, string>
                 {
-                    stringBuilder.Append(key);
-                    stringBuilder.Append(": ");
-                    stringBuilder.Append(value);
-                    stringBuilder.Append(LineDelimiter);
+                    { "Content-Type", "text/html; charset=utf-8" }
+                };
+
+                return Create(responseStatusLine, headers, requestData.Target);
+            }
+            catch
+            {
+                return Create(new ResponseStatusLine(requestData.Version, HttpStatusCode.NotFound));
+            }
+        }
+
+        public byte[] Create(ResponseStatusLine responseStatusLine)
+        {
+            switch (responseStatusLine.StatusCode)
+            {
+                case HttpStatusCode.BadRequest:
+                case HttpStatusCode.NotFound:
+                case HttpStatusCode.MethodNotAllowed:
+                case HttpStatusCode.InternalServerError:
+                {
+                    var headers = new Dictionary<string, string>
+                    {
+                        { "Content-Type", "text/html; charset=utf-8" }
+                    };
+
+                    return Create(responseStatusLine, headers, $"{(int)responseStatusLine.StatusCode}.html");
+                }
+
+                default:
+                {
+                    return _responseHeaderParser.Parse(responseStatusLine);
                 }
             }
+        }
 
-            stringBuilder.Append(LineDelimiter);
+        private byte[] Create(ResponseStatusLine statusLine, IDictionary<string, string> headers, string path)
+        {
+            var headerBytes = _responseHeaderParser.Parse(statusLine, headers);
 
-            var responseBytes = Encoding.ASCII.GetBytes(stringBuilder.ToString());
+            var filePath = _filePathProvider.Provide(path);
 
-            return responseBytes;
+            var contentBytes = _fileReader.Read(filePath);
+
+            var resultBytes = new byte[headerBytes.Length + contentBytes.Length];
+            for (var i = 0; i < headerBytes.Length; i++)
+            {
+                resultBytes[i] = headerBytes[i];
+            }
+
+            for (var i = 0; i < contentBytes.Length; i++)
+            {
+                resultBytes[i + headerBytes.Length] = contentBytes[i];
+            }
+
+            return resultBytes;
         }
     }
 }
