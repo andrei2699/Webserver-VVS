@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Net;
+using Webserver.HTTPHeaders;
 using Webserver.IO;
 using Webserver.Request;
 
@@ -10,34 +12,47 @@ namespace Webserver.Response
         private readonly IResponseHeaderParser _responseHeaderParser;
         private readonly IFilePathProvider _filePathProvider;
         private readonly IFileReader _fileReader;
+        private readonly IContentTypeHeaderProvider _contentTypeHeaderProvider;
 
         public ResponseCreator(IResponseHeaderParser responseHeaderParser, IFilePathProvider filePathProvider,
-            IFileReader fileReader)
+            IFileReader fileReader, IContentTypeHeaderProvider contentTypeHeaderProvider)
         {
             _responseHeaderParser = responseHeaderParser;
             _filePathProvider = filePathProvider;
             _fileReader = fileReader;
+            _contentTypeHeaderProvider = contentTypeHeaderProvider;
         }
 
         public byte[] Create(RequestData requestData)
         {
+            if (requestData == null)
+            {
+                return Create(new ResponseStatusLine("HTTP/1.1", HttpStatusCode.BadRequest));
+            }
+
+            if (requestData.Method is not ("GET" or "HEAD"))
+            {
+                return Create(new ResponseStatusLine("HTTP/1.1", HttpStatusCode.MethodNotAllowed));
+            }
+
             try
             {
                 var responseStatusLine = new ResponseStatusLine(requestData.Version, HttpStatusCode.OK);
 
-                var requestDataTarget = requestData.Target;
-                var provide = _filePathProvider.Provide(requestDataTarget);
-
                 var headers = new Dictionary<string, string>
                 {
-                    { "Content-Type", "text/html; charset=utf-8" }
+                    { "Content-Type", _contentTypeHeaderProvider.Provide(requestData.Target) }
                 };
 
                 return Create(responseStatusLine, headers, requestData.Target);
             }
-            catch
+            catch (FileNotFoundException)
             {
                 return Create(new ResponseStatusLine(requestData.Version, HttpStatusCode.NotFound));
+            }
+            catch
+            {
+                return Create(new ResponseStatusLine(requestData.Version, HttpStatusCode.InternalServerError));
             }
         }
 
