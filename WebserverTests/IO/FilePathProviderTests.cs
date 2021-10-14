@@ -38,7 +38,7 @@ namespace WebserverTests.IO
         {
             var providedPath = _sut.Provide(defaultPageName);
 
-            Assert.EndsWith($"\\{defaultPageName}", providedPath);
+            Assert.EndsWith(Path.Combine("DefaultPages", defaultPageName), providedPath);
         }
 
         [Theory]
@@ -53,7 +53,7 @@ namespace WebserverTests.IO
 
             var providedPath = _sut.Provide(defaultPageName);
 
-            Assert.EndsWith($"\\{defaultPageName}", providedPath);
+            Assert.EndsWith(Path.Combine("DefaultPages", defaultPageName), providedPath);
         }
 
         [Theory]

@@ -1,11 +1,14 @@
 ﻿using System;
 using System.IO;
+using System.Web;
 
 namespace Webserver.IO
 {
     public class FilePathProvider : IFilePathProvider
     {
         private readonly IFilePathValidator _filePathValidator;
+
+        private const string DefaultPagesFolderName = "DefaultPages";
 
         private string _rootPath;
 
@@ -45,19 +48,20 @@ namespace Webserver.IO
             {
                 if (path is "400.html" or "404.html" or "405.html" or "500.html")
                 {
-                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, path);
+                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path);
                 }
 
                 return path;
             }
 
             var finalPath = Path.Combine(_rootPath, path);
+            finalPath = HttpUtility.UrlDecode(finalPath);
 
             if (path is "400.html" or "404.html" or "405.html" or "500.html")
             {
                 if (!_filePathValidator.Validate(finalPath))
                 {
-                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, path);
+                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path);
                 }
             }
 
