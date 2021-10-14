@@ -11,10 +11,12 @@ namespace Webserver
         static void Main(string[] args)
         {
             var fileReader = new FileReader();
+            var filePathProvider = new FilePathProvider(new FilePathValidator());
             new Server(
+                    filePathProvider,
                     new ServerConfigManager(fileReader, new FileWriter()),
                     new RequestParser(),
-                    new ResponseCreator(new ResponseHeaderParser(), new FilePathProvider(), fileReader,
+                    new ResponseCreator(new ResponseHeaderParser(), filePathProvider, fileReader,
                         new ContentTypeHeaderProvider()))
                 .Start();
         }

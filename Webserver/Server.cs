@@ -3,6 +3,7 @@ using System.Net.Sockets;
 using System.Threading;
 using Webserver.Config;
 using Webserver.Exceptions;
+using Webserver.IO;
 using Webserver.Request;
 using Webserver.Response;
 
@@ -10,15 +11,18 @@ namespace Webserver
 {
     public class Server
     {
+        private readonly FilePathProvider _filePathProvider;
         private readonly IServerConfigManager _serverConfigManager;
         private readonly IRequestParser _requestParser;
         private readonly IResponseCreator _responseCreator;
 
         private TcpListener _listener;
 
-        public Server(IServerConfigManager serverConfigManager, IRequestParser requestParser,
+        public Server(FilePathProvider filePathProvider, IServerConfigManager serverConfigManager,
+            IRequestParser requestParser,
             IResponseCreator responseCreator)
         {
+            _filePathProvider = filePathProvider;
             _serverConfigManager = serverConfigManager;
             _requestParser = requestParser;
             _responseCreator = responseCreator;
@@ -26,8 +30,10 @@ namespace Webserver
 
         public void Start()
         {
-            var serverConfig = _serverConfigManager.ReadConfig();
-            _listener = new TcpListener(serverConfig.Port);
+            var (port, filePath) = _serverConfigManager.ReadConfig();
+            _filePathProvider.SetRootPath(filePath);
+
+            _listener = new TcpListener(port);
             _listener.Start();
             Console.Write("Web Server Running...");
             var thread = new Thread(StartListen);
