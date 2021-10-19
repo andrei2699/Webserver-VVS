@@ -1,7 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Text.Json;
 using Humanizer;
 using Moq;
 using Webserver.HTTPHeaders;
@@ -20,11 +22,12 @@ namespace WebserverTests.Response
         private readonly Mock<IFilePathProvider> _filePathProviderMock = new();
         private readonly Mock<IFileReader> _fileReaderMock = new();
         private readonly Mock<IContentTypeHeaderProvider> _contentTypeHeaderProviderMock = new();
+        private readonly Mock<IConfigRequestHandler> _configRequestHandlerMock = new();
 
         public ResponseCreatorTests()
         {
             _sut = new ResponseCreator(_responseHeaderParserMock.Object, _filePathProviderMock.Object,
-                _fileReaderMock.Object, _contentTypeHeaderProviderMock.Object);
+                _fileReaderMock.Object, _contentTypeHeaderProviderMock.Object, _configRequestHandlerMock.Object);
         }
 
         [Theory]
@@ -178,6 +181,210 @@ namespace WebserverTests.Response
             Assert.Equal(expectedBytes, bytes);
         }
 
+        [Fact]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToMaintenance()
+        {
+            var expectedBytes =
+                Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"success\":true,\"message\":\"status changed to maintenance\"}");
+
+            _configRequestHandlerMock
+                .Setup(handler => handler.Handle(@"{""action"",""change_state"",""value"":""2""}"))
+                .Returns(@"{""success"":true,""message"":""status changed to maintenance""}");
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "application/json" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n"));
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(@"{""action"",""change_state"",""value"":""2""}")));
+
+            Assert.Equal(expectedBytes, bytes);
+        }
+
+        [Fact]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToStopped()
+        {
+            var expectedBytes =
+                Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"success\":true,\"message\":\"stopping server\"}");
+
+            _configRequestHandlerMock
+                .Setup(handler => handler.Handle(@"{""action"",""change_state"",""value"":""0""}"))
+                .Returns(@"{""success"":true,""message"":""stopping server""}");
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "application/json" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n"));
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(@"{""action"",""change_state"",""value"":""0""}")));
+
+            Assert.Equal(expectedBytes, bytes);
+        }
+
+        [Fact]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToRunning()
+        {
+            var expectedBytes =
+                Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"success\":true,\"message\":\"status changed to running\"}");
+
+            _configRequestHandlerMock
+                .Setup(handler => handler.Handle(@"{""action"",""change_state"",""value"":""1""}"))
+                .Returns(@"{""success"":true,""message"":""status changed to running""}");
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "application/json" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n"));
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(@"{""action"",""change_state"",""value"":""1""}")));
+
+            Assert.Equal(expectedBytes, bytes);
+        }
+
+        [Fact]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToInvalidState()
+        {
+            var expectedBytes =
+                Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"success\":false,\"message\":\"invalid status\"}");
+
+            _configRequestHandlerMock
+                .Setup(handler =>
+                    handler.Handle(@"{""action"",""change_state"",""value"":""25""}"))
+                .Returns(@"{""success"":false,""message"":""invalid status""}");
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "application/json" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n"));
+
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(@"{""action"",""change_state"",""value"":""25""}")));
+
+
+            Assert.Equal(expectedBytes, bytes);
+        }
+
+        [Fact]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_WithNotJSONBody()
+        {
+            var expectedBytes = GetBytesForBadRequest(new ResponseStatusLine("HTTP/1.1", HttpStatusCode.BadRequest));
+
+            _configRequestHandlerMock
+                .Setup(handler => handler.Handle(@"not json string"))
+                .Throws<JsonException>();
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "text/html; charset=utf-8" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html; charset=utf-8\r\n\r\n"));
+
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(@"not json string")));
+
+
+            Assert.Equal(expectedBytes, bytes);
+        }
+
+        [Theory]
+        [InlineData(@"{""action2"":""change_path"",""value"":""other_path""}")]
+        [InlineData(@"{""action"":""change_path"",""value2"":""other_path""}")]
+        [InlineData(@"{""action2"":""change_path"",""value2"":""other_path""}")]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_WithJSONBodyButWrongItems(string value)
+        {
+            var expectedBytes = GetBytesForBadRequest(new ResponseStatusLine("HTTP/1.1", HttpStatusCode.BadRequest));
+
+            _configRequestHandlerMock
+                .Setup(handler => handler.Handle(value))
+                .Throws<ArgumentException>();
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "text/html; charset=utf-8" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 400 Bad Request\r\nContent-Type: text/html; charset=utf-8\r\n\r\n"));
+
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(value)));
+
+
+            Assert.Equal(expectedBytes, bytes);
+        }
+
+        [Fact]
+        public void Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeFilePath()
+        {
+            var expectedBytes =
+                Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n{\"success\":true,\"message\":\"path changed\"}");
+
+            _configRequestHandlerMock
+                .Setup(handler =>
+                    handler.Handle(@"{""action"",""change_path"",""value"":""other_path""}"))
+                .Returns(@"{""success"":true,""message"":""path changed""}");
+
+            _responseHeaderParserMock.Setup(parser => parser.Parse(
+                    new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), new Dictionary<string, string>
+                    {
+                        { "Content-Type", "application/json" }
+                    }))
+                .Returns(Encoding.ASCII.GetBytes(
+                    "HTTP/1.1 200 OK\r\nContent-Type: application/json\r\n\r\n"));
+
+
+            var bytes = _sut.Create(new RequestData("POST", "/config", "HTTP/1.1",
+                new Dictionary<string, string>
+                {
+                    { "Host", "localhost:8080" }
+                }, Encoding.ASCII.GetBytes(@"{""action"",""change_path"",""value"":""other_path""}")));
+
+
+            Assert.Equal(expectedBytes, bytes);
+        }
 
         private byte[] GetBytesForBadRequest(ResponseStatusLine responseStatusLine)
         {
