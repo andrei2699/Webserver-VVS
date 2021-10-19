@@ -8,6 +8,7 @@ namespace Webserver.Config
     public class ServerConfigManager : IServerConfigManager
     {
         private const string ConfigFileName = "config.json";
+        private const string DefaultFolderPath = "public_html";
 
         private readonly IFileReader _fileReader;
         private readonly IFileWriter _fileWriter;
@@ -28,7 +29,7 @@ namespace Webserver.Config
             }
             catch
             {
-                var config = new ServerConfig(8080, AppDomain.CurrentDomain.BaseDirectory);
+                var config = new ServerConfig(8080, DefaultFolderPath, DefaultFolderPath, ServerState.Running);
                 WriteConfig(config);
                 return config;
             }

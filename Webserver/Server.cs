@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using Webserver.Config;
@@ -30,14 +31,45 @@ namespace Webserver
 
         public void Start()
         {
-            var (port, filePath) = _serverConfigManager.ReadConfig();
-            _filePathProvider.SetRootPath(filePath);
+            var (port, filePath, maintenanceFilePath, serverState) = _serverConfigManager.ReadConfig();
+            _serverConfigManager.WriteConfig(new ServerConfig(port, filePath, maintenanceFilePath,
+                ServerState.Running));
 
-            _listener = new TcpListener(port);
+            if (serverState is ServerState.Stopped)
+            {
+                serverState = ServerState.Running;
+                _filePathProvider.SetRootPath(filePath);
+            }
+            else
+            {
+                _filePathProvider.SetRootPath(maintenanceFilePath);
+            }
+
+            _listener = new TcpListener(IPAddress.Any, port);
             _listener.Start();
-            Console.Write("Web Server Running...");
+            Console.WriteLine("Web Server Running...");
             var thread = new Thread(StartListen);
             thread.Start();
+
+            thread.Join();
+
+            if (serverState is ServerState.Running)
+            {
+                serverState = ServerState.Stopped;
+            }
+
+            Console.WriteLine("Web Server Stopping...");
+            _serverConfigManager.WriteConfig(new ServerConfig(port, filePath, maintenanceFilePath,
+                serverState));
+        }
+
+        public void OnStatusChanged(ServerState serverState)
+        {
+        }
+
+        public void OnFilePathChanged(string filePath)
+        {
+            
         }
 
         private void StartListen()

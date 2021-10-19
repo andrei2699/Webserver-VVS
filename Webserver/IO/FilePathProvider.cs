@@ -9,6 +9,7 @@ namespace Webserver.IO
         private readonly IFilePathValidator _filePathValidator;
 
         private const string DefaultPagesFolderName = "DefaultPages";
+        private const string DefaultFolderPath = "public_html";
 
         private string _rootPath;
 

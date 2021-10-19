@@ -12,13 +12,18 @@ namespace Webserver
         {
             var fileReader = new FileReader();
             var filePathProvider = new FilePathProvider(new FilePathValidator());
-            new Server(
-                    filePathProvider,
-                    new ServerConfigManager(fileReader, new FileWriter()),
-                    new RequestParser(),
-                    new ResponseCreator(new ResponseHeaderParser(), filePathProvider, fileReader,
-                        new ContentTypeHeaderProvider()))
-                .Start();
+            var serverManager = new ServerEvents();
+            var server = new Server(
+                filePathProvider,
+                new ServerConfigManager(fileReader, new FileWriter()),
+                new RequestParser(),
+                new ResponseCreator(new ResponseHeaderParser(), filePathProvider, fileReader,
+                    new ContentTypeHeaderProvider(), new ConfigRequestHandler(serverManager)));
+
+            serverManager.OnStatusChanged += server.OnStatusChanged;
+            serverManager.OnFilePathChanged += server.OnFilePathChanged;
+
+            server.Start();
         }
     }
 }

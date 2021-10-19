@@ -25,7 +25,7 @@ namespace WebserverTests.Config
             _fileReaderMock.Setup(reader => reader.Read("config.json"))
                 .Returns(Encoding.ASCII.GetBytes(@"{""Port"":5125,""FilePath"":""a_file/path""}"));
 
-            var (port, filePath) = _sut.ReadConfig();
+            var (port, filePath, _, _) = _sut.ReadConfig();
 
             Assert.Equal(5125, port);
             Assert.Equal("a_file/path", filePath);
@@ -36,7 +36,7 @@ namespace WebserverTests.Config
         {
             _fileReaderMock.Setup(reader => reader.Read("config.json")).Throws<FileNotFoundException>();
 
-            var (port, filePath) = _sut.ReadConfig();
+            var (port, filePath, _, _) = _sut.ReadConfig();
 
             _fileWriterMock.Verify(writer => writer.Write("config.json", It.IsAny<string>()), Times.Once());
 
@@ -49,7 +49,7 @@ namespace WebserverTests.Config
         {
             _fileReaderMock.Setup(reader => reader.Read("config.json")).Returns(Encoding.ASCII.GetBytes("text"));
 
-            var (port, filePath) = _sut.ReadConfig();
+            var (port, filePath, _, _) = _sut.ReadConfig();
 
             _fileWriterMock.Verify(writer => writer.Write("config.json", It.IsAny<string>()), Times.Once());
 
@@ -68,9 +68,9 @@ namespace WebserverTests.Config
         [Fact]
         public void WriteConfig_ShouldWriteConfig_WhenGivenConfig()
         {
-            _sut.WriteConfig(new ServerConfig(1234, "somePath"));
+            _sut.WriteConfig(new ServerConfig(1234, "somePath", "otherPath", ServerState.Maintenance));
 
-            _fileWriterMock.Verify(writer => writer.Write("config.json", @"{""Port"":1234,""FilePath"":""somePath""}"),
+            _fileWriterMock.Verify(writer => writer.Write("config.json", @"{""Port"":1234,""FilePath"":""somePath"",""MaintenanceFilePath"":""otherPath"",""State"":2}"),
                 Times.Once());
         }
     }
