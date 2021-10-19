@@ -78,6 +78,15 @@ namespace WebserverTests.HTTPHeaders
         }
 
         [Fact]
+        public void Provide_ShouldReturnTextHtml_WhenGivenRoot()
+        {
+            var header = _sut.Provide("/");
+
+            Assert.Equal("text/html; charset=utf-8", header);
+        }
+
+        
+        [Fact]
         public void Provide_ShouldReturnImagePng_WhenGivenPng()
         {
             var header = _sut.Provide("images/img.png");

@@ -45,7 +45,8 @@ namespace Webserver.Response
 
                     try
                     {
-                        var responseString = _configRequestHandler.Handle(Encoding.ASCII.GetString(requestData.Body));
+                        var requestDataBody = Encoding.ASCII.GetString(requestData.Body, 0, requestData.Body.Length);
+                        var responseString = _configRequestHandler.Handle(requestDataBody);
                         return Create(new ResponseStatusLine("HTTP/1.1", HttpStatusCode.OK), headers,
                             Encoding.ASCII.GetBytes(responseString));
                     }

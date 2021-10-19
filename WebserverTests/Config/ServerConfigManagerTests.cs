@@ -23,12 +23,15 @@ namespace WebserverTests.Config
         public void ReadConfig_ShouldReturnConfig_WhenConfigFileExists()
         {
             _fileReaderMock.Setup(reader => reader.Read("config.json"))
-                .Returns(Encoding.ASCII.GetBytes(@"{""Port"":5125,""FilePath"":""a_file/path""}"));
+                .Returns(Encoding.ASCII.GetBytes(
+                    @"{""Port"":5125,""FilePath"":""a_file/path"",""MaintenanceFilePath"":""path"",""State"":2}"));
 
-            var (port, filePath, _, _) = _sut.ReadConfig();
+            var (port, filePath, maintenanceFilePath, state) = _sut.ReadConfig();
 
             Assert.Equal(5125, port);
             Assert.Equal("a_file/path", filePath);
+            Assert.Equal("path", maintenanceFilePath);
+            Assert.Equal(ServerState.Maintenance, state);
         }
 
         [Fact]
@@ -70,7 +73,9 @@ namespace WebserverTests.Config
         {
             _sut.WriteConfig(new ServerConfig(1234, "somePath", "otherPath", ServerState.Maintenance));
 
-            _fileWriterMock.Verify(writer => writer.Write("config.json", @"{""Port"":1234,""FilePath"":""somePath"",""MaintenanceFilePath"":""otherPath"",""State"":2}"),
+            _fileWriterMock.Verify(
+                writer => writer.Write("config.json",
+                    @"{""Port"":1234,""FilePath"":""somePath"",""MaintenanceFilePath"":""otherPath"",""State"":2}"),
                 Times.Once());
         }
     }

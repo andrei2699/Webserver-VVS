@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Text;
 using Webserver.Exceptions;
@@ -56,14 +57,24 @@ namespace Webserver.Request
                 UpdateHeadersDictionary(headers, headerLine);
             } while (!string.IsNullOrEmpty(headerLine));
 
-            byte[] body = null;
-            if (startIndex < requestedBytesSpan.Length)
+            var body = new List<byte>();
+            for (var i = startIndex; i < requestedBytesSpan.Length; i++)
             {
-                body = requestedBytesSpan[startIndex..];
+                if (requestedBytesSpan[i] == 0)
+                {
+                    break;
+                }
+
+                body.Add(requestedBytesSpan[i]);
+            }
+
+            if (body.Count == 0)
+            {
+                body = null;
             }
 
 
-            return new RequestData(methodName, target, version, headers, body);
+            return new RequestData(methodName, target, version, headers, body?.ToArray());
         }
 
         private Span<byte> ExtractLine(Span<byte> bytes, int startIndex)

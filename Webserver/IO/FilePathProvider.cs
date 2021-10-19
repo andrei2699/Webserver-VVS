@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 using System.Web;
 
 namespace Webserver.IO
@@ -9,8 +10,8 @@ namespace Webserver.IO
         private readonly IFilePathValidator _filePathValidator;
 
         private const string DefaultPagesFolderName = "DefaultPages";
-        private const string DefaultFolderPath = "public_html";
 
+        private readonly Semaphore _semaphore = new(1, 1);
         private string _rootPath;
 
         public FilePathProvider(IFilePathValidator filePathValidator)
@@ -20,12 +21,15 @@ namespace Webserver.IO
 
         public void SetRootPath(string rootPath)
         {
+            _semaphore.WaitOne();
             _rootPath = rootPath;
 
             if (_rootPath.EndsWith('/') || _rootPath.EndsWith('\\'))
             {
                 _rootPath = _rootPath[..^1];
             }
+
+            _semaphore.Release();
         }
 
         public string Provide(string path)

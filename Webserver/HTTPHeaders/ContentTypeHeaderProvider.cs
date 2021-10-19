@@ -10,7 +10,7 @@
                 "gif" or "png" or "tiff" => $"image/{extension}",
                 "jpeg" or "jpg" => "image/jpeg",
                 "csv" or "css" or "xml" => $"text/{extension}; charset=utf-8",
-                "html" or "htm" => "text/html; charset=utf-8",
+                "html" or "htm" or "/" => "text/html; charset=utf-8",
                 "txt" or _ => "text/plain; charset=utf-8"
             };
         }
@@ -20,6 +20,11 @@
             if (string.IsNullOrEmpty(fileName))
             {
                 return "";
+            }
+
+            if (fileName == "/")
+            {
+                return "/";
             }
 
             var indexOfLastDot = fileName.LastIndexOf('.');
