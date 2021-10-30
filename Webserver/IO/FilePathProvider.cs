@@ -51,7 +51,7 @@ namespace Webserver.IO
 
             if (string.IsNullOrEmpty(_rootPath))
             {
-                if (path is "400.html" or "404.html" or "405.html" or "500.html")
+                if (IsDefaultPage(path))
                 {
                     return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path);
                 }
@@ -62,7 +62,7 @@ namespace Webserver.IO
             var finalPath = Path.Combine(_rootPath, path);
             finalPath = HttpUtility.UrlDecode(finalPath);
 
-            if (path is "400.html" or "404.html" or "405.html" or "500.html")
+            if (IsDefaultPage(path))
             {
                 if (!_filePathValidator.Validate(finalPath))
                 {
@@ -71,6 +71,11 @@ namespace Webserver.IO
             }
 
             return finalPath;
+        }
+
+        private static bool IsDefaultPage(string path)
+        {
+            return path is "400.html" or "404.html" or "405.html" or "500.html" or "Maintenance.html";
         }
     }
 }

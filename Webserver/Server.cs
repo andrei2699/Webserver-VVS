@@ -19,19 +19,22 @@ namespace Webserver
         private readonly IServerConfigManager _serverConfigManager;
         private readonly IRequestParser _requestParser;
         private readonly IResponseCreator _responseCreator;
+        private readonly IFilePathValidator _filePathValidator;
 
         private TcpListener _listener;
         private ServerConfig _serverConfig;
         private List<Thread> _threads = new();
 
+        private const string MaintenanceDefaultFilePath = "Maintenance.html";
+
         public Server(IFilePathProvider filePathProvider, IServerConfigManager serverConfigManager,
-            IRequestParser requestParser,
-            IResponseCreator responseCreator)
+            IRequestParser requestParser, IResponseCreator responseCreator, IFilePathValidator filePathValidator)
         {
             _filePathProvider = filePathProvider;
             _serverConfigManager = serverConfigManager;
             _requestParser = requestParser;
             _responseCreator = responseCreator;
+            _filePathValidator = filePathValidator;
         }
 
         public void Start()
@@ -42,19 +45,16 @@ namespace Webserver
                 _serverConfig.MaintenanceFilePath,
                 ServerState.Running));
 
-            if (_serverConfig.State is ServerState.Maintenance)
-            {
-                _filePathProvider.SetRootPath(_serverConfig.MaintenanceFilePath);
-            }
-            else
+            if (_serverConfig.State is not ServerState.Maintenance)
             {
                 _serverConfig.State = ServerState.Running;
-                _filePathProvider.SetRootPath(_serverConfig.FilePath);
             }
+
+            _filePathProvider.SetRootPath(_serverConfig.FilePath);
 
             _listener = new TcpListener(IPAddress.Any, _serverConfig.Port);
             _listener.Start();
-            Console.WriteLine("Web Server Running...");
+            Console.WriteLine($"Web Server Running on {_serverConfig.Port.ToString()}...");
 
             _threads = new List<Thread>();
             for (var i = 0; i < ThreadCount; i++)
@@ -84,6 +84,9 @@ namespace Webserver
 
         public void OnStatusChanged(ServerState serverState)
         {
+            _serverConfig.State = serverState;
+            _serverConfigManager.WriteConfig(_serverConfig);
+
             if (serverState == ServerState.Stopped)
             {
                 foreach (var thread in _threads)
@@ -92,32 +95,6 @@ namespace Webserver
                 }
 
                 Environment.Exit(0);
-
-                return;
-            }
-
-            switch (_serverConfig.State)
-            {
-                case ServerState.Running:
-                {
-                    if (serverState == ServerState.Maintenance)
-                    {
-                        _serverConfig.State = serverState;
-                        _filePathProvider.SetRootPath(_serverConfig.MaintenanceFilePath);
-                        _serverConfigManager.WriteConfig(_serverConfig);
-                    }
-                }
-                    break;
-                case ServerState.Maintenance:
-                {
-                    if (serverState == ServerState.Running)
-                    {
-                        _serverConfig.State = serverState;
-                        _filePathProvider.SetRootPath(_serverConfig.FilePath);
-                        _serverConfigManager.WriteConfig(_serverConfig);
-                    }
-                }
-                    break;
             }
         }
 
@@ -136,7 +113,6 @@ namespace Webserver
                 {
                     _serverConfig.MaintenanceFilePath = filePath;
                     _serverConfigManager.WriteConfig(_serverConfig);
-                    _filePathProvider.SetRootPath(filePath);
                 }
                     break;
             }
@@ -156,6 +132,19 @@ namespace Webserver
                     try
                     {
                         var requestData = _requestParser.Parse(receivedBytes);
+
+                        if (_serverConfig.State == ServerState.Maintenance && requestData.Target != "/config")
+                        {
+                            var maintenanceFilePath = _serverConfig.MaintenanceFilePath;
+                            if (!_filePathValidator.Validate(maintenanceFilePath))
+                            {
+                                maintenanceFilePath = MaintenanceDefaultFilePath;
+                            }
+
+                            requestData = new RequestData(requestData.Method, maintenanceFilePath,
+                                requestData.Version, requestData.Headers, requestData.Body);
+                        }
+
                         socket.Send(_responseCreator.Create(requestData));
                     }
                     catch (ServerException serverException)
