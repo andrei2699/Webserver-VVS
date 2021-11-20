@@ -8,7 +8,7 @@ namespace Webserver.Response
     {
         private const string LineDelimiter = "\r\n";
 
-        public byte[] Parse(ResponseStatusLine responseStatusLine, IDictionary<string, string> headers)
+        public byte[] Parse(ResponseStatusLine responseStatusLine, IDictionary<string, string> headers = null)
         {
             var stringBuilder = new StringBuilder();
 

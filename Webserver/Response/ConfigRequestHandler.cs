@@ -19,7 +19,7 @@ namespace Webserver.Response
             if (configRequest == null || string.IsNullOrEmpty(configRequest.action) ||
                 string.IsNullOrEmpty(configRequest.value))
             {
-                throw new ArgumentException();
+                throw new ArgumentException("Invalid Request");
             }
 
             switch (configRequest.action)
@@ -68,8 +68,8 @@ namespace Webserver.Response
             return JsonSerializer.Serialize(new ConfigResponse(false, "invalid command"));
         }
 
-        private record ConfigRequest(string action, string value);
+        private sealed record ConfigRequest(string action, string value);
 
-        private record ConfigResponse(bool success, string message);
+        private sealed record ConfigResponse(bool success, string message);
     }
 }

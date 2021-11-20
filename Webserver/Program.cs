@@ -6,9 +6,9 @@ using Webserver.Response;
 
 namespace Webserver
 {
-    class Program
+    static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var fileReader = new FileReader();
             var filePathValidator = new FilePathValidator();

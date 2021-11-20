@@ -19,7 +19,7 @@ namespace WebserverTests.Config
 
             _sut.OnFilePathChanged += path =>
             {
-                Assert.Equal(path, "somePath");
+                Assert.Equal("somePath", path);
                 called = true;
             };
 

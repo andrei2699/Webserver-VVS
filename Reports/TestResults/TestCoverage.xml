@@ -1,0 +1,1371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root CoveredStatements="831" TotalStatements="958" CoveragePercent="87" ReportType="DetailedXml" DotCoverVersion="2021.2.2">
+  <FileIndices>
+    <File Index="1" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Config\IServerConfigManager.cs" ChecksumAlgorithm="SHA256" Checksum="19DC5A4DF526A77F5E3AF0BA902B903515B38E99F8AF901D8845C2395D12F9D9" />
+    <File Index="2" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Config\IServerEvents.cs" ChecksumAlgorithm="SHA256" Checksum="8E890B0B4D8026E92D13EF875CA87038535883CEB531B6470DFFF4DD48823A75" />
+    <File Index="3" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Config\ServerConfig.cs" ChecksumAlgorithm="SHA256" Checksum="D80827112113B3DC261A6EEC864F2F1E91CC58288A6EB8D2409DCCEE7C613121" />
+    <File Index="4" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Config\ServerConfigManager.cs" ChecksumAlgorithm="SHA256" Checksum="0AB77944EAF166C16CE0A1ECDFFEDD73005F97F2E2DD0D3FD39F1F5E8813BE42" />
+    <File Index="5" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Config\ServerEvents.cs" ChecksumAlgorithm="SHA256" Checksum="72201CEFBE93380004AFA6E1AFE2991055E0028B4B425390E0863F6E4C278015" />
+    <File Index="6" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Config\ServerState.cs" ChecksumAlgorithm="SHA256" Checksum="D78BC2CB7470686B7DA924A769957EFCE7C35A7F2FEA442E7D6A54E4759EDF7F" />
+    <File Index="7" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Exceptions\ServerException.cs" ChecksumAlgorithm="SHA256" Checksum="3D0CD1D0C581655F7622BE1D0B28BF6444A0C9D9C7C739C661A8EF8ED1F3605A" />
+    <File Index="8" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\HTTPHeaders\ContentTypeHeaderProvider.cs" ChecksumAlgorithm="SHA256" Checksum="5FCF04A625256CC59C863B8ADAC423F76FFE35E49459A75114BC6E50A4F769AD" />
+    <File Index="9" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\HTTPHeaders\IContentTypeHeaderProvider.cs" ChecksumAlgorithm="SHA256" Checksum="48256A42EF0B5E01595CD9C352454F862211E4D45AFA98C436BB44283B77FD86" />
+    <File Index="10" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\FilePathProvider.cs" ChecksumAlgorithm="SHA256" Checksum="53600A8A0FC4406D1D5410FB12AB4FDF2EDE273FCCC1659D80B812B1EC8D115A" />
+    <File Index="11" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\FilePathValidator.cs" ChecksumAlgorithm="SHA256" Checksum="9002EA3E15040C4B67E9CE8AD3F7663672FC9F773FF24935A9783D0CE46C2224" />
+    <File Index="12" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\FileReader.cs" ChecksumAlgorithm="SHA256" Checksum="364112CEAB7D3A21DB7145847B7F56807A8D554E77C7F934296AD96C20561DDB" />
+    <File Index="13" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\FileWriter.cs" ChecksumAlgorithm="SHA256" Checksum="588337417630E7E8799C365BBF40378A357887C497FA3CEE6B984DD516885DFD" />
+    <File Index="14" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\IFilePathProvider.cs" ChecksumAlgorithm="SHA256" Checksum="239FDC2D3527A49855A41843B240F860E45F834627195054EDB8ADD9270B2F7D" />
+    <File Index="15" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\IFilePathValidator.cs" ChecksumAlgorithm="SHA256" Checksum="D1C337578B646F69AA2006BBF4E0736B67EF9F0E08F4A32EFA3C9D484EC468DE" />
+    <File Index="16" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\IFileReader.cs" ChecksumAlgorithm="SHA256" Checksum="1C784320A56B398CCADFA08BB80C5548A1CAB3D40D0745A1014E0A826273FDF7" />
+    <File Index="17" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\IO\IFileWriter.cs" ChecksumAlgorithm="SHA256" Checksum="6E3DA974D8957142CB4899D03E46771AD4EE6398E8984ED64E08BC9345D42C19" />
+    <File Index="18" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Program.cs" ChecksumAlgorithm="SHA256" Checksum="BA6D40DB8B9902E9C08CF9AF193D9C9D2AA510655ADA5D71E5907C167E46587D" />
+    <File Index="19" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Request\IRequestParser.cs" ChecksumAlgorithm="SHA256" Checksum="6B0A014FB74F3E4EC166AFA4701BF8D7B75E46692E7D4DD06174563E907E70F7" />
+    <File Index="20" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Request\RequestData.cs" ChecksumAlgorithm="SHA256" Checksum="E9C220261F1FF9CA563AF5F7931F0D1FD0A121BDBC4F1077AB520909B570AF59" />
+    <File Index="21" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Request\RequestParser.cs" ChecksumAlgorithm="SHA256" Checksum="57FC08E273EA86CF2FB09DD0D51D4EC6BC0006240F4E226DF94B10F5ED873177" />
+    <File Index="22" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\ConfigRequestHandler.cs" ChecksumAlgorithm="SHA256" Checksum="4156980ED2D7CC741849F766CE8FAACE0D54DB3D33EEBE371575B223FBA45FDB" />
+    <File Index="23" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\IConfigRequestHandler.cs" ChecksumAlgorithm="SHA256" Checksum="FF819CACA607F878BA39F60AF043CA1F15C3036D9C913B37AE4A54310E8D4BBA" />
+    <File Index="24" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\IResponseCreator.cs" ChecksumAlgorithm="SHA256" Checksum="E6107B575D59FC07940403CA3AA5792489DF9DBB7D1AEA19626A7F4CF3AA4CDA" />
+    <File Index="25" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\IResponseHeaderParser.cs" ChecksumAlgorithm="SHA256" Checksum="595DCD63BFB02A019CE231FEA8C48D60A4E60AFD5F4595BC9386EE892A92C559" />
+    <File Index="26" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\ResponseCreator.cs" ChecksumAlgorithm="SHA256" Checksum="C044882594A9D052E39AB3E373B8E7A74CE38F2C99F3A770528EDF04F907DEB8" />
+    <File Index="27" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\ResponseHeaderParser.cs" ChecksumAlgorithm="SHA256" Checksum="CB92FF379190E2C32B3FA5C63A817F0EBAC0B91AA98DDB473D30A0136F2AE719" />
+    <File Index="28" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Response\ResponseStatusLine.cs" ChecksumAlgorithm="SHA256" Checksum="3E42010C7A539CB2095708F689E1A2BBB4B97014B9E25E9F3D99AC443A5436D9" />
+    <File Index="29" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\Server.cs" ChecksumAlgorithm="SHA256" Checksum="1028D38BCA6DE812B11EAAD542BB5861F54B5E894689B7C0E1208245E6F19C66" />
+    <File Index="30" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="31" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\Webserver\obj\Debug\net5.0\Webserver.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="2035227467102765E6A9C0936F548C720D997612C0F4E832ED0D173F6DB65905" />
+    <File Index="32" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\Config\ServerConfigManagerTests.cs" ChecksumAlgorithm="SHA256" Checksum="51A523BFEBED3D19C7AC87DF01B56B839ECD2CA01C6515BE0040C17FA6EA6FB5" />
+    <File Index="33" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\Config\ServerEventsTests.cs" ChecksumAlgorithm="SHA256" Checksum="E5964C6D44AFA9A748BA2B77ABB163A23A23A7904932BC63B065746E5E744D55" />
+    <File Index="34" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\HTTPHeaders\ContentTypeHeaderProviderTests.cs" ChecksumAlgorithm="SHA256" Checksum="2ADF7C3E135F8C74E433242E2A7966633067345EA63B80DB1D669C9AF998D546" />
+    <File Index="35" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\IO\FilePathProviderTests.cs" ChecksumAlgorithm="SHA256" Checksum="2999FADDEB809A03FF5A928EECAB2D4221B4410273BD3C8AABF77B61571617D9" />
+    <File Index="36" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\Request\RequestParserTests.cs" ChecksumAlgorithm="SHA256" Checksum="1288BDAAEC27741489820B28A402E2A4F6AD960903B5546223CA2D0EA614F74F" />
+    <File Index="37" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\Response\ConfigRequestHandlerTests.cs" ChecksumAlgorithm="SHA256" Checksum="50E5DE0CD151E1A8305255D3CBD24EF718C56EB5771F89FFD1488C455E6E2D09" />
+    <File Index="38" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\Response\ResponseCreatorTests.cs" ChecksumAlgorithm="SHA256" Checksum="E162DD9AAE3FAB3270AB9C6CC079A87EE1787B9BB7111817162253842D0B83E6" />
+    <File Index="39" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\Response\ResponseHeaderParserTests.cs" ChecksumAlgorithm="SHA256" Checksum="C42D5F0E29D87C27A75E01092743DFFAF4E76A2A6A5E1373C3BD9DAA8D7BFBC7" />
+    <File Index="40" Name="C:\Users\Andrei\.nuget\packages\microsoft.net.test.sdk\16.9.4\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs" ChecksumAlgorithm="SHA256" Checksum="D66F12F9433816A8C7DC1B2ACB9E1010F5418F5EEB51E80F1DF57AA1DCAB8D8A" />
+    <File Index="41" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" ChecksumAlgorithm="SHA256" Checksum="3DAB221DDB7A8D7D050731DC8D289DF26D56F7DABEB91B3D7F96E5CB6C994C29" />
+    <File Index="42" Name="D:\Work\Scoala\Anul 4\VVS\Laborator\webserver\WebserverTests\obj\Debug\net5.0\WebserverTests.AssemblyInfo.cs" ChecksumAlgorithm="SHA256" Checksum="F958DB6C7A209219BC20488A063DFBA44CEF81EFD7DB6411A4B282D4B4A8785D" />
+  </FileIndices>
+  <Assembly Name="Webserver" CoveredStatements="353" TotalStatements="480" CoveragePercent="74">
+    <Namespace Name="Webserver" CoveredStatements="0" TotalStatements="116" CoveragePercent="0">
+      <Type Name="Program" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+        <Method Name="Main(System.String[]):System.Void" CoveredStatements="0" TotalStatements="10" CoveragePercent="0">
+          <Statement FileIndex="18" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="False" />
+          <Statement FileIndex="18" Line="13" Column="13" EndLine="13" EndColumn="47" Covered="False" />
+          <Statement FileIndex="18" Line="14" Column="13" EndLine="14" EndColumn="61" Covered="False" />
+          <Statement FileIndex="18" Line="15" Column="13" EndLine="15" EndColumn="76" Covered="False" />
+          <Statement FileIndex="18" Line="16" Column="13" EndLine="16" EndColumn="52" Covered="False" />
+          <Statement FileIndex="18" Line="17" Column="13" EndLine="23" EndColumn="36" Covered="False" />
+          <Statement FileIndex="18" Line="25" Column="13" EndLine="25" EndColumn="69" Covered="False" />
+          <Statement FileIndex="18" Line="26" Column="13" EndLine="26" EndColumn="73" Covered="False" />
+          <Statement FileIndex="18" Line="28" Column="13" EndLine="28" EndColumn="28" Covered="False" />
+          <Statement FileIndex="18" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+      <Type Name="Server" CoveredStatements="0" TotalStatements="106" CoveragePercent="0">
+        <Method Name=".ctor(Webserver.IO.IFilePathProvider,Webserver.Config.IServerConfigManager,Webserver.Request.IRequestParser,Webserver.Response.IResponseCreator,Webserver.IO.IFilePathValidator):System.Void" CoveredStatements="0" TotalStatements="9" CoveragePercent="0">
+          <Statement FileIndex="29" Line="26" Column="9" EndLine="26" EndColumn="47" Covered="False" />
+          <Statement FileIndex="29" Line="30" Column="9" EndLine="31" EndColumn="114" Covered="False" />
+          <Statement FileIndex="29" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="False" />
+          <Statement FileIndex="29" Line="33" Column="13" EndLine="33" EndColumn="50" Covered="False" />
+          <Statement FileIndex="29" Line="34" Column="13" EndLine="34" EndColumn="56" Covered="False" />
+          <Statement FileIndex="29" Line="35" Column="13" EndLine="35" EndColumn="44" Covered="False" />
+          <Statement FileIndex="29" Line="36" Column="13" EndLine="36" EndColumn="48" Covered="False" />
+          <Statement FileIndex="29" Line="37" Column="13" EndLine="37" EndColumn="52" Covered="False" />
+          <Statement FileIndex="29" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="OnFilePathChanged(System.String):System.Void" CoveredStatements="0" TotalStatements="14" CoveragePercent="0">
+          <Statement FileIndex="29" Line="102" Column="9" EndLine="102" EndColumn="10" Covered="False" />
+          <Statement FileIndex="29" Line="103" Column="13" EndLine="103" EndColumn="41" Covered="False" />
+          <Statement FileIndex="29" Line="106" Column="17" EndLine="106" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="107" Column="21" EndLine="107" EndColumn="55" Covered="False" />
+          <Statement FileIndex="29" Line="108" Column="21" EndLine="108" EndColumn="69" Covered="False" />
+          <Statement FileIndex="29" Line="109" Column="21" EndLine="109" EndColumn="61" Covered="False" />
+          <Statement FileIndex="29" Line="110" Column="17" EndLine="110" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="111" Column="21" EndLine="111" EndColumn="27" Covered="False" />
+          <Statement FileIndex="29" Line="113" Column="17" EndLine="113" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="114" Column="21" EndLine="114" EndColumn="66" Covered="False" />
+          <Statement FileIndex="29" Line="115" Column="21" EndLine="115" EndColumn="69" Covered="False" />
+          <Statement FileIndex="29" Line="116" Column="17" EndLine="116" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="117" Column="21" EndLine="117" EndColumn="27" Covered="False" />
+          <Statement FileIndex="29" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="OnStatusChanged(Webserver.Config.ServerState):System.Void" CoveredStatements="0" TotalStatements="15" CoveragePercent="0">
+          <Statement FileIndex="29" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="False" />
+          <Statement FileIndex="29" Line="87" Column="13" EndLine="87" EndColumn="47" Covered="False" />
+          <Statement FileIndex="29" Line="88" Column="13" EndLine="88" EndColumn="61" Covered="False" />
+          <Statement FileIndex="29" Line="90" Column="13" EndLine="90" EndColumn="52" Covered="False" />
+          <Statement FileIndex="29" Line="91" Column="13" EndLine="91" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="92" Column="17" EndLine="92" EndColumn="24" Covered="False" />
+          <Statement FileIndex="29" Line="92" Column="40" EndLine="92" EndColumn="48" Covered="False" />
+          <Statement FileIndex="29" Line="92" Column="26" EndLine="92" EndColumn="36" Covered="False" />
+          <Statement FileIndex="29" Line="93" Column="17" EndLine="93" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="94" Column="21" EndLine="94" EndColumn="40" Covered="False" />
+          <Statement FileIndex="29" Line="95" Column="17" EndLine="95" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="92" Column="37" EndLine="92" EndColumn="39" Covered="False" />
+          <Statement FileIndex="29" Line="97" Column="17" EndLine="97" EndColumn="37" Covered="False" />
+          <Statement FileIndex="29" Line="98" Column="13" EndLine="98" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="99" Column="9" EndLine="99" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="Start():System.Void" CoveredStatements="0" TotalStatements="34" CoveragePercent="0">
+          <Statement FileIndex="29" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="False" />
+          <Statement FileIndex="29" Line="42" Column="13" EndLine="42" EndColumn="63" Covered="False" />
+          <Statement FileIndex="29" Line="44" Column="13" EndLine="46" EndColumn="39" Covered="False" />
+          <Statement FileIndex="29" Line="48" Column="13" EndLine="48" EndColumn="68" Covered="False" />
+          <Statement FileIndex="29" Line="49" Column="13" EndLine="49" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="50" Column="17" EndLine="50" EndColumn="59" Covered="False" />
+          <Statement FileIndex="29" Line="51" Column="13" EndLine="51" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="53" Column="13" EndLine="53" EndColumn="67" Covered="False" />
+          <Statement FileIndex="29" Line="55" Column="13" EndLine="55" EndColumn="76" Covered="False" />
+          <Statement FileIndex="29" Line="56" Column="13" EndLine="56" EndColumn="31" Covered="False" />
+          <Statement FileIndex="29" Line="57" Column="13" EndLine="57" EndColumn="92" Covered="False" />
+          <Statement FileIndex="29" Line="59" Column="13" EndLine="59" EndColumn="43" Covered="False" />
+          <Statement FileIndex="29" Line="60" Column="18" EndLine="60" EndColumn="27" Covered="False" />
+          <Statement FileIndex="29" Line="61" Column="13" EndLine="61" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="62" Column="17" EndLine="62" EndColumn="54" Covered="False" />
+          <Statement FileIndex="29" Line="63" Column="17" EndLine="63" EndColumn="38" Covered="False" />
+          <Statement FileIndex="29" Line="65" Column="17" EndLine="65" EndColumn="32" Covered="False" />
+          <Statement FileIndex="29" Line="66" Column="13" EndLine="66" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="60" Column="46" EndLine="60" EndColumn="49" Covered="False" />
+          <Statement FileIndex="29" Line="60" Column="29" EndLine="60" EndColumn="44" Covered="False" />
+          <Statement FileIndex="29" Line="68" Column="13" EndLine="68" EndColumn="20" Covered="False" />
+          <Statement FileIndex="29" Line="68" Column="36" EndLine="68" EndColumn="44" Covered="False" />
+          <Statement FileIndex="29" Line="68" Column="22" EndLine="68" EndColumn="32" Covered="False" />
+          <Statement FileIndex="29" Line="69" Column="13" EndLine="69" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="70" Column="17" EndLine="70" EndColumn="31" Covered="False" />
+          <Statement FileIndex="29" Line="71" Column="13" EndLine="71" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="68" Column="33" EndLine="68" EndColumn="35" Covered="False" />
+          <Statement FileIndex="29" Line="73" Column="13" EndLine="73" EndColumn="60" Covered="False" />
+          <Statement FileIndex="29" Line="74" Column="13" EndLine="74" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="75" Column="17" EndLine="75" EndColumn="59" Covered="False" />
+          <Statement FileIndex="29" Line="76" Column="13" EndLine="76" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="78" Column="13" EndLine="78" EndColumn="57" Covered="False" />
+          <Statement FileIndex="29" Line="80" Column="13" EndLine="82" EndColumn="39" Covered="False" />
+          <Statement FileIndex="29" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="False" />
+        </Method>
+        <Method Name="StartListen():System.Void" CoveredStatements="0" TotalStatements="34" CoveragePercent="0">
+          <Statement FileIndex="29" Line="122" Column="9" EndLine="122" EndColumn="10" Covered="False" />
+          <Statement FileIndex="29" Line="124" Column="13" EndLine="124" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="126" Column="17" EndLine="126" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="127" Column="21" EndLine="127" EndColumn="59" Covered="False" />
+          <Statement FileIndex="29" Line="129" Column="21" EndLine="129" EndColumn="56" Covered="False" />
+          <Statement FileIndex="29" Line="130" Column="21" EndLine="130" EndColumn="76" Covered="False" />
+          <Statement FileIndex="29" Line="133" Column="21" EndLine="133" EndColumn="22" Covered="False" />
+          <Statement FileIndex="29" Line="134" Column="25" EndLine="134" EndColumn="79" Covered="False" />
+          <Statement FileIndex="29" Line="136" Column="25" EndLine="136" EndColumn="111" Covered="False" />
+          <Statement FileIndex="29" Line="137" Column="25" EndLine="137" EndColumn="26" Covered="False" />
+          <Statement FileIndex="29" Line="138" Column="29" EndLine="138" EndColumn="89" Covered="False" />
+          <Statement FileIndex="29" Line="139" Column="29" EndLine="139" EndColumn="83" Covered="False" />
+          <Statement FileIndex="29" Line="140" Column="29" EndLine="140" EndColumn="30" Covered="False" />
+          <Statement FileIndex="29" Line="141" Column="33" EndLine="141" EndColumn="82" Covered="False" />
+          <Statement FileIndex="29" Line="142" Column="29" EndLine="142" EndColumn="30" Covered="False" />
+          <Statement FileIndex="29" Line="144" Column="29" EndLine="145" EndColumn="93" Covered="False" />
+          <Statement FileIndex="29" Line="146" Column="25" EndLine="146" EndColumn="26" Covered="False" />
+          <Statement FileIndex="29" Line="148" Column="25" EndLine="148" EndColumn="75" Covered="False" />
+          <Statement FileIndex="29" Line="149" Column="21" EndLine="149" EndColumn="22" Covered="False" />
+          <Statement FileIndex="29" Line="150" Column="21" EndLine="150" EndColumn="60" Covered="False" />
+          <Statement FileIndex="29" Line="151" Column="21" EndLine="151" EndColumn="22" Covered="False" />
+          <Statement FileIndex="29" Line="152" Column="25" EndLine="153" EndColumn="118" Covered="False" />
+          <Statement FileIndex="29" Line="154" Column="21" EndLine="154" EndColumn="22" Covered="False" />
+          <Statement FileIndex="29" Line="156" Column="21" EndLine="156" EndColumn="36" Covered="False" />
+          <Statement FileIndex="29" Line="157" Column="17" EndLine="157" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="158" Column="17" EndLine="158" EndColumn="51" Covered="False" />
+          <Statement FileIndex="29" Line="159" Column="17" EndLine="159" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="160" Column="21" EndLine="160" EndColumn="68" Covered="False" />
+          <Statement FileIndex="29" Line="161" Column="21" EndLine="161" EndColumn="22" Covered="False" />
+          <Statement FileIndex="29" Line="162" Column="25" EndLine="162" EndColumn="32" Covered="False" />
+          <Statement FileIndex="29" Line="164" Column="17" EndLine="164" EndColumn="18" Covered="False" />
+          <Statement FileIndex="29" Line="165" Column="13" EndLine="165" EndColumn="14" Covered="False" />
+          <Statement FileIndex="29" Line="123" Column="13" EndLine="123" EndColumn="63" Covered="False" />
+          <Statement FileIndex="29" Line="166" Column="9" EndLine="166" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Webserver.Config" CoveredStatements="52" TotalStatements="52" CoveragePercent="100">
+      <Type Name="ServerConfig" CoveredStatements="23" TotalStatements="23" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="3" Line="18" Column="33" EndLine="18" EndColumn="43" Covered="True" />
+          <Statement FileIndex="3" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name=".ctor(System.Int32):System.Void" CoveredStatements="2" TotalStatements="2" CoveragePercent="100">
+          <Statement FileIndex="3" Line="3" Column="32" EndLine="3" EndColumn="40" Covered="True" />
+          <Statement FileIndex="3" Line="3" Column="5" EndLine="30" EndColumn="6" Covered="True" />
+        </Method>
+        <Method Name=".ctor(System.Int32,System.String,System.String,Webserver.Config.ServerState):System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="3" Line="11" Column="105" EndLine="11" EndColumn="115" Covered="True" />
+          <Statement FileIndex="3" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="13" Column="13" EndLine="13" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="14" Column="13" EndLine="14" EndColumn="55" Covered="True" />
+          <Statement FileIndex="3" Line="15" Column="13" EndLine="15" EndColumn="27" Covered="True" />
+          <Statement FileIndex="3" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Deconstruct(System.Int32,System.String,System.String,Webserver.Config.ServerState):System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="3" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+          <Statement FileIndex="3" Line="25" Column="13" EndLine="25" EndColumn="25" Covered="True" />
+          <Statement FileIndex="3" Line="26" Column="13" EndLine="26" EndColumn="33" Covered="True" />
+          <Statement FileIndex="3" Line="27" Column="13" EndLine="27" EndColumn="55" Covered="True" />
+          <Statement FileIndex="3" Line="28" Column="13" EndLine="28" EndColumn="27" Covered="True" />
+          <Statement FileIndex="3" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="get_FilePath():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="5" Column="34" EndLine="5" EndColumn="38" Covered="True" />
+        </Method>
+        <Method Name="get_MaintenanceFilePath():System.String" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="7" Column="45" EndLine="7" EndColumn="49" Covered="True" />
+        </Method>
+        <Method Name="get_State():Webserver.Config.ServerState" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="9" Column="36" EndLine="9" EndColumn="40" Covered="True" />
+        </Method>
+        <Method Name="set_FilePath(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="5" Column="39" EndLine="5" EndColumn="43" Covered="True" />
+        </Method>
+        <Method Name="set_MaintenanceFilePath(System.String):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="7" Column="50" EndLine="7" EndColumn="54" Covered="True" />
+        </Method>
+        <Method Name="set_State(Webserver.Config.ServerState):System.Void" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="3" Line="9" Column="41" EndLine="9" EndColumn="45" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ServerConfigManager" CoveredStatements="23" TotalStatements="23" CoveragePercent="100">
+        <Method Name=".ctor(Webserver.IO.IFileReader,Webserver.IO.IFileWriter):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="4" Line="16" Column="9" EndLine="16" EndColumn="83" Covered="True" />
+          <Statement FileIndex="4" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="18" Column="13" EndLine="18" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="19" Column="13" EndLine="19" EndColumn="38" Covered="True" />
+          <Statement FileIndex="4" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReadConfig():Webserver.Config.ServerConfig" CoveredStatements="11" TotalStatements="11" CoveragePercent="100">
+          <Statement FileIndex="4" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="25" Column="13" EndLine="25" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="26" Column="17" EndLine="26" EndColumn="72" Covered="True" />
+          <Statement FileIndex="4" Line="27" Column="17" EndLine="27" EndColumn="83" Covered="True" />
+          <Statement FileIndex="4" Line="28" Column="17" EndLine="28" EndColumn="84" Covered="True" />
+          <Statement FileIndex="4" Line="30" Column="13" EndLine="30" EndColumn="18" Covered="True" />
+          <Statement FileIndex="4" Line="31" Column="13" EndLine="31" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="32" Column="17" EndLine="32" EndColumn="112" Covered="True" />
+          <Statement FileIndex="4" Line="33" Column="17" EndLine="33" EndColumn="37" Covered="True" />
+          <Statement FileIndex="4" Line="34" Column="17" EndLine="34" EndColumn="31" Covered="True" />
+          <Statement FileIndex="4" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="WriteConfig(Webserver.Config.ServerConfig):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="4" Line="39" Column="9" EndLine="39" EndColumn="10" Covered="True" />
+          <Statement FileIndex="4" Line="40" Column="13" EndLine="40" EndColumn="32" Covered="True" />
+          <Statement FileIndex="4" Line="41" Column="13" EndLine="41" EndColumn="14" Covered="True" />
+          <Statement FileIndex="4" Line="42" Column="17" EndLine="42" EndColumn="24" Covered="True" />
+          <Statement FileIndex="4" Line="45" Column="13" EndLine="45" EndColumn="69" Covered="True" />
+          <Statement FileIndex="4" Line="46" Column="13" EndLine="46" EndColumn="65" Covered="True" />
+          <Statement FileIndex="4" Line="47" Column="9" EndLine="47" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ServerEvents" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Method Name="ChangeFilePath(System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="5" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="13" Column="13" EndLine="13" EndColumn="49" Covered="True" />
+          <Statement FileIndex="5" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ChangeState(Webserver.Config.ServerState):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="5" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="5" Line="18" Column="13" EndLine="18" EndColumn="50" Covered="True" />
+          <Statement FileIndex="5" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Webserver.Exceptions" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+      <Type Name="ServerException" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+        <Method Name=".ctor(System.Net.HttpStatusCode):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="7" Line="10" Column="61" EndLine="10" EndColumn="88" Covered="True" />
+          <Statement FileIndex="7" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+          <Statement FileIndex="7" Line="12" Column="13" EndLine="12" EndColumn="37" Covered="True" />
+          <Statement FileIndex="7" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="get_StatusCode():System.Net.HttpStatusCode" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="7" Line="8" Column="44" EndLine="8" EndColumn="48" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Webserver.HTTPHeaders" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
+      <Type Name="ContentTypeHeaderProvider" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
+        <Method Name="GetExtension(System.String):System.String" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="8" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="20" Column="13" EndLine="20" EndColumn="48" Covered="True" />
+          <Statement FileIndex="8" Line="21" Column="13" EndLine="21" EndColumn="14" Covered="True" />
+          <Statement FileIndex="8" Line="22" Column="17" EndLine="22" EndColumn="27" Covered="True" />
+          <Statement FileIndex="8" Line="25" Column="13" EndLine="25" EndColumn="33" Covered="True" />
+          <Statement FileIndex="8" Line="26" Column="13" EndLine="26" EndColumn="14" Covered="True" />
+          <Statement FileIndex="8" Line="27" Column="17" EndLine="27" EndColumn="28" Covered="True" />
+          <Statement FileIndex="8" Line="30" Column="13" EndLine="30" EndColumn="60" Covered="True" />
+          <Statement FileIndex="8" Line="31" Column="13" EndLine="31" EndColumn="79" Covered="True" />
+          <Statement FileIndex="8" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide(System.String):System.String" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="8" Line="6" Column="9" EndLine="6" EndColumn="10" Covered="True" />
+          <Statement FileIndex="8" Line="7" Column="13" EndLine="7" EndColumn="52" Covered="True" />
+          <Statement FileIndex="8" Line="8" Column="13" EndLine="15" EndColumn="15" Covered="True" />
+          <Statement FileIndex="8" Line="10" Column="45" EndLine="10" EndColumn="65" Covered="True" />
+          <Statement FileIndex="8" Line="11" Column="36" EndLine="11" EndColumn="48" Covered="True" />
+          <Statement FileIndex="8" Line="12" Column="44" EndLine="12" EndColumn="78" Covered="True" />
+          <Statement FileIndex="8" Line="13" Column="43" EndLine="13" EndColumn="69" Covered="True" />
+          <Statement FileIndex="8" Line="14" Column="31" EndLine="14" EndColumn="58" Covered="True" />
+          <Statement FileIndex="8" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Webserver.IO" CoveredStatements="45" TotalStatements="54" CoveragePercent="83">
+      <Type Name="FilePathProvider" CoveredStatements="45" TotalStatements="45" CoveragePercent="100">
+        <Method Name=".ctor(Webserver.IO.IFilePathValidator):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="10" Line="14" Column="9" EndLine="14" EndColumn="59" Covered="True" />
+          <Statement FileIndex="10" Line="17" Column="9" EndLine="17" EndColumn="70" Covered="True" />
+          <Statement FileIndex="10" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="19" Column="13" EndLine="19" EndColumn="52" Covered="True" />
+          <Statement FileIndex="10" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="IsDefaultPage(System.String):System.Boolean" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="10" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="78" Column="13" EndLine="78" EndColumn="103" Covered="True" />
+          <Statement FileIndex="10" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide(System.String):System.String" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+          <Statement FileIndex="10" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="37" Column="13" EndLine="37" EndColumn="49" Covered="True" />
+          <Statement FileIndex="10" Line="38" Column="13" EndLine="38" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="39" Column="17" EndLine="39" EndColumn="27" Covered="True" />
+          <Statement FileIndex="10" Line="42" Column="13" EndLine="42" EndColumn="29" Covered="True" />
+          <Statement FileIndex="10" Line="43" Column="13" EndLine="43" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="44" Column="17" EndLine="44" EndColumn="37" Covered="True" />
+          <Statement FileIndex="10" Line="45" Column="13" EndLine="45" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="47" Column="13" EndLine="47" EndColumn="63" Covered="True" />
+          <Statement FileIndex="10" Line="48" Column="13" EndLine="48" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="49" Column="17" EndLine="49" EndColumn="34" Covered="True" />
+          <Statement FileIndex="10" Line="50" Column="13" EndLine="50" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="52" Column="13" EndLine="52" EndColumn="49" Covered="True" />
+          <Statement FileIndex="10" Line="53" Column="13" EndLine="53" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="54" Column="17" EndLine="54" EndColumn="41" Covered="True" />
+          <Statement FileIndex="10" Line="55" Column="17" EndLine="55" EndColumn="18" Covered="True" />
+          <Statement FileIndex="10" Line="56" Column="21" EndLine="56" EndColumn="110" Covered="True" />
+          <Statement FileIndex="10" Line="59" Column="17" EndLine="59" EndColumn="29" Covered="True" />
+          <Statement FileIndex="10" Line="62" Column="13" EndLine="62" EndColumn="59" Covered="True" />
+          <Statement FileIndex="10" Line="63" Column="13" EndLine="63" EndColumn="58" Covered="True" />
+          <Statement FileIndex="10" Line="65" Column="13" EndLine="65" EndColumn="37" Covered="True" />
+          <Statement FileIndex="10" Line="66" Column="13" EndLine="66" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="67" Column="17" EndLine="67" EndColumn="61" Covered="True" />
+          <Statement FileIndex="10" Line="68" Column="17" EndLine="68" EndColumn="18" Covered="True" />
+          <Statement FileIndex="10" Line="69" Column="21" EndLine="69" EndColumn="110" Covered="True" />
+          <Statement FileIndex="10" Line="71" Column="13" EndLine="71" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="73" Column="13" EndLine="73" EndColumn="30" Covered="True" />
+          <Statement FileIndex="10" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="SetRootPath(System.String):System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="10" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="10" Line="24" Column="13" EndLine="24" EndColumn="34" Covered="True" />
+          <Statement FileIndex="10" Line="25" Column="13" EndLine="25" EndColumn="34" Covered="True" />
+          <Statement FileIndex="10" Line="27" Column="13" EndLine="27" EndColumn="69" Covered="True" />
+          <Statement FileIndex="10" Line="28" Column="13" EndLine="28" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="29" Column="17" EndLine="29" EndColumn="45" Covered="True" />
+          <Statement FileIndex="10" Line="30" Column="13" EndLine="30" EndColumn="14" Covered="True" />
+          <Statement FileIndex="10" Line="32" Column="13" EndLine="32" EndColumn="34" Covered="True" />
+          <Statement FileIndex="10" Line="33" Column="9" EndLine="33" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="FilePathValidator" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+        <Method Name="Validate(System.String):System.Boolean" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <Statement FileIndex="11" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="False" />
+          <Statement FileIndex="11" Line="9" Column="13" EndLine="9" EndColumn="38" Covered="False" />
+          <Statement FileIndex="11" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+      <Type Name="FileReader" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+        <Method Name="Read(System.String):System.Byte[]" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <Statement FileIndex="12" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="False" />
+          <Statement FileIndex="12" Line="9" Column="13" EndLine="9" EndColumn="44" Covered="False" />
+          <Statement FileIndex="12" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+      <Type Name="FileWriter" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+        <Method Name="Write(System.String,System.String):System.Void" CoveredStatements="0" TotalStatements="3" CoveragePercent="0">
+          <Statement FileIndex="13" Line="8" Column="9" EndLine="8" EndColumn="10" Covered="False" />
+          <Statement FileIndex="13" Line="9" Column="13" EndLine="9" EndColumn="46" Covered="False" />
+          <Statement FileIndex="13" Line="10" Column="9" EndLine="10" EndColumn="10" Covered="False" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Webserver.Request" CoveredStatements="86" TotalStatements="88" CoveragePercent="98">
+      <Type Name="RequestData" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+        <Method Name=".ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;,System.Byte[]):System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="20" Line="5" Column="31" EndLine="5" EndColumn="44" Covered="True" />
+          <Statement FileIndex="20" Line="5" Column="46" EndLine="5" EndColumn="59" Covered="True" />
+          <Statement FileIndex="20" Line="5" Column="61" EndLine="5" EndColumn="75" Covered="True" />
+          <Statement FileIndex="20" Line="5" Column="77" EndLine="5" EndColumn="112" Covered="True" />
+          <Statement FileIndex="20" Line="6" Column="9" EndLine="6" EndColumn="27" Covered="True" />
+          <Statement FileIndex="20" Line="5" Column="5" EndLine="6" EndColumn="29" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="RequestParser" CoveredStatements="80" TotalStatements="82" CoveragePercent="98">
+        <Method Name=".ctor():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="21" Line="15" Column="9" EndLine="15" EndColumn="31" Covered="True" />
+          <Statement FileIndex="21" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="17" Column="13" EndLine="17" EndColumn="57" Covered="True" />
+          <Statement FileIndex="21" Line="18" Column="13" EndLine="18" EndColumn="44" Covered="True" />
+          <Statement FileIndex="21" Line="19" Column="13" EndLine="19" EndColumn="38" Covered="True" />
+          <Statement FileIndex="21" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ExtractLine(System.Span&lt;System.Byte&gt;,System.Int32):System.Span&lt;System.Byte&gt;" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="21" Line="81" Column="9" EndLine="81" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="83" Column="13" EndLine="83" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="84" Column="22" EndLine="84" EndColumn="40" Covered="True" />
+          <Statement FileIndex="21" Line="85" Column="17" EndLine="85" EndColumn="18" Covered="True" />
+          <Statement FileIndex="21" Line="86" Column="21" EndLine="86" EndColumn="90" Covered="True" />
+          <Statement FileIndex="21" Line="87" Column="21" EndLine="87" EndColumn="22" Covered="True" />
+          <Statement FileIndex="21" Line="88" Column="25" EndLine="88" EndColumn="53" Covered="True" />
+          <Statement FileIndex="21" Line="90" Column="17" EndLine="90" EndColumn="18" Covered="True" />
+          <Statement FileIndex="21" Line="84" Column="60" EndLine="84" EndColumn="63" Covered="True" />
+          <Statement FileIndex="21" Line="84" Column="42" EndLine="84" EndColumn="58" Covered="True" />
+          <Statement FileIndex="21" Line="92" Column="17" EndLine="92" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="94" Column="13" EndLine="94" EndColumn="18" Covered="True" />
+          <Statement FileIndex="21" Line="95" Column="13" EndLine="95" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="96" Column="17" EndLine="96" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse(System.Byte[]):Webserver.Request.RequestData" CoveredStatements="37" TotalStatements="39" CoveragePercent="95">
+          <Statement FileIndex="21" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="24" Column="13" EndLine="24" EndColumn="66" Covered="True" />
+          <Statement FileIndex="21" Line="25" Column="13" EndLine="25" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="26" Column="17" EndLine="26" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="29" Column="13" EndLine="29" EndColumn="51" Covered="True" />
+          <Statement FileIndex="21" Line="31" Column="13" EndLine="31" EndColumn="69" Covered="True" />
+          <Statement FileIndex="21" Line="32" Column="13" EndLine="32" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="35" Column="13" EndLine="35" EndColumn="75" Covered="True" />
+          <Statement FileIndex="21" Line="37" Column="13" EndLine="37" EndColumn="54" Covered="True" />
+          <Statement FileIndex="21" Line="38" Column="13" EndLine="38" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="39" Column="17" EndLine="39" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="42" Column="13" EndLine="42" EndColumn="60" Covered="True" />
+          <Statement FileIndex="21" Line="45" Column="13" EndLine="45" EndColumn="51" Covered="True" />
+          <Statement FileIndex="21" Line="47" Column="13" EndLine="47" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="48" Column="17" EndLine="48" EndColumn="83" Covered="True" />
+          <Statement FileIndex="21" Line="49" Column="17" EndLine="49" EndColumn="72" Covered="True" />
+          <Statement FileIndex="21" Line="50" Column="17" EndLine="50" EndColumn="53" Covered="True" />
+          <Statement FileIndex="21" Line="52" Column="17" EndLine="52" EndColumn="54" Covered="True" />
+          <Statement FileIndex="21" Line="53" Column="17" EndLine="53" EndColumn="18" Covered="True" />
+          <Statement FileIndex="21" Line="54" Column="21" EndLine="54" EndColumn="27" Covered="True" />
+          <Statement FileIndex="21" Line="57" Column="17" EndLine="57" EndColumn="62" Covered="True" />
+          <Statement FileIndex="21" Line="58" Column="13" EndLine="58" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="58" Column="15" EndLine="58" EndColumn="57" Covered="True" />
+          <Statement FileIndex="21" Line="60" Column="13" EndLine="60" EndColumn="41" Covered="True" />
+          <Statement FileIndex="21" Line="61" Column="18" EndLine="61" EndColumn="36" Covered="True" />
+          <Statement FileIndex="21" Line="62" Column="13" EndLine="62" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="63" Column="17" EndLine="63" EndColumn="48" Covered="True" />
+          <Statement FileIndex="21" Line="64" Column="17" EndLine="64" EndColumn="18" Covered="False" />
+          <Statement FileIndex="21" Line="65" Column="21" EndLine="65" EndColumn="27" Covered="False" />
+          <Statement FileIndex="21" Line="68" Column="17" EndLine="68" EndColumn="49" Covered="True" />
+          <Statement FileIndex="21" Line="69" Column="13" EndLine="69" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="61" Column="69" EndLine="61" EndColumn="72" Covered="True" />
+          <Statement FileIndex="21" Line="61" Column="38" EndLine="61" EndColumn="67" Covered="True" />
+          <Statement FileIndex="21" Line="71" Column="13" EndLine="71" EndColumn="33" Covered="True" />
+          <Statement FileIndex="21" Line="72" Column="13" EndLine="72" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="73" Column="17" EndLine="73" EndColumn="29" Covered="True" />
+          <Statement FileIndex="21" Line="74" Column="13" EndLine="74" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="77" Column="13" EndLine="77" EndColumn="91" Covered="True" />
+          <Statement FileIndex="21" Line="78" Column="9" EndLine="78" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ParseFirstLine(System.String):System.ValueTuple&lt;System.String,System.String,System.String&gt;" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="21" Line="101" Column="9" EndLine="101" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="102" Column="13" EndLine="102" EndColumn="41" Covered="True" />
+          <Statement FileIndex="21" Line="103" Column="13" EndLine="103" EndColumn="35" Covered="True" />
+          <Statement FileIndex="21" Line="104" Column="13" EndLine="104" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="105" Column="17" EndLine="105" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="108" Column="13" EndLine="108" EndColumn="51" Covered="True" />
+          <Statement FileIndex="21" Line="109" Column="9" EndLine="109" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="UpdateHeadersDictionary(System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;,System.String):System.Void" CoveredStatements="15" TotalStatements="15" CoveragePercent="100">
+          <Statement FileIndex="21" Line="112" Column="9" EndLine="112" EndColumn="10" Covered="True" />
+          <Statement FileIndex="21" Line="113" Column="13" EndLine="113" EndColumn="60" Covered="True" />
+          <Statement FileIndex="21" Line="114" Column="13" EndLine="114" EndColumn="38" Covered="True" />
+          <Statement FileIndex="21" Line="115" Column="13" EndLine="115" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="116" Column="17" EndLine="116" EndColumn="70" Covered="True" />
+          <Statement FileIndex="21" Line="119" Column="13" EndLine="119" EndColumn="68" Covered="True" />
+          <Statement FileIndex="21" Line="120" Column="13" EndLine="120" EndColumn="75" Covered="True" />
+          <Statement FileIndex="21" Line="122" Column="13" EndLine="122" EndColumn="49" Covered="True" />
+          <Statement FileIndex="21" Line="123" Column="13" EndLine="123" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="124" Column="17" EndLine="124" EndColumn="51" Covered="True" />
+          <Statement FileIndex="21" Line="125" Column="13" EndLine="125" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="127" Column="13" EndLine="127" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="128" Column="17" EndLine="128" EndColumn="54" Covered="True" />
+          <Statement FileIndex="21" Line="129" Column="13" EndLine="129" EndColumn="14" Covered="True" />
+          <Statement FileIndex="21" Line="130" Column="9" EndLine="130" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="Webserver.Response" CoveredStatements="146" TotalStatements="146" CoveragePercent="100">
+      <Type Name="ConfigRequestHandler" CoveredStatements="38" TotalStatements="38" CoveragePercent="100">
+        <Type Name="ConfigRequest" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Method Name=".ctor(System.String,System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+            <Statement FileIndex="22" Line="71" Column="38" EndLine="71" EndColumn="51" Covered="True" />
+            <Statement FileIndex="22" Line="71" Column="53" EndLine="71" EndColumn="65" Covered="True" />
+            <Statement FileIndex="22" Line="71" Column="9" EndLine="71" EndColumn="67" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="ConfigResponse" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Method Name=".ctor(System.Boolean,System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+            <Statement FileIndex="22" Line="73" Column="39" EndLine="73" EndColumn="51" Covered="True" />
+            <Statement FileIndex="22" Line="73" Column="53" EndLine="73" EndColumn="67" Covered="True" />
+            <Statement FileIndex="22" Line="73" Column="9" EndLine="73" EndColumn="69" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor(Webserver.Config.IServerEvents):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="22" Line="11" Column="9" EndLine="11" EndColumn="64" Covered="True" />
+          <Statement FileIndex="22" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="13" Column="13" EndLine="13" EndColumn="42" Covered="True" />
+          <Statement FileIndex="22" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle(System.String):System.String" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+          <Statement FileIndex="22" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="22" Line="18" Column="13" EndLine="18" EndColumn="92" Covered="True" />
+          <Statement FileIndex="22" Line="19" Column="13" EndLine="20" EndColumn="59" Covered="True" />
+          <Statement FileIndex="22" Line="21" Column="13" EndLine="21" EndColumn="14" Covered="True" />
+          <Statement FileIndex="22" Line="22" Column="17" EndLine="22" EndColumn="47" Covered="True" />
+          <Statement FileIndex="22" Line="25" Column="13" EndLine="25" EndColumn="42" Covered="True" />
+          <Statement FileIndex="22" Line="28" Column="17" EndLine="28" EndColumn="18" Covered="True" />
+          <Statement FileIndex="22" Line="30" Column="21" EndLine="30" EndColumn="22" Covered="True" />
+          <Statement FileIndex="22" Line="31" Column="25" EndLine="31" EndColumn="82" Covered="True" />
+          <Statement FileIndex="22" Line="33" Column="25" EndLine="33" EndColumn="40" Covered="True" />
+          <Statement FileIndex="22" Line="36" Column="29" EndLine="36" EndColumn="30" Covered="True" />
+          <Statement FileIndex="22" Line="37" Column="33" EndLine="37" EndColumn="67" Covered="True" />
+          <Statement FileIndex="22" Line="38" Column="33" EndLine="38" EndColumn="110" Covered="True" />
+          <Statement FileIndex="22" Line="41" Column="29" EndLine="41" EndColumn="30" Covered="True" />
+          <Statement FileIndex="22" Line="42" Column="33" EndLine="42" EndColumn="67" Covered="True" />
+          <Statement FileIndex="22" Line="43" Column="33" EndLine="43" EndColumn="120" Covered="True" />
+          <Statement FileIndex="22" Line="46" Column="29" EndLine="46" EndColumn="30" Covered="True" />
+          <Statement FileIndex="22" Line="47" Column="33" EndLine="47" EndColumn="67" Covered="True" />
+          <Statement FileIndex="22" Line="48" Column="33" EndLine="49" EndColumn="71" Covered="True" />
+          <Statement FileIndex="22" Line="52" Column="33" EndLine="52" EndColumn="110" Covered="True" />
+          <Statement FileIndex="22" Line="55" Column="21" EndLine="55" EndColumn="26" Covered="True" />
+          <Statement FileIndex="22" Line="56" Column="21" EndLine="56" EndColumn="22" Covered="True" />
+          <Statement FileIndex="22" Line="57" Column="25" EndLine="57" EndColumn="102" Covered="True" />
+          <Statement FileIndex="22" Line="62" Column="17" EndLine="62" EndColumn="18" Covered="True" />
+          <Statement FileIndex="22" Line="63" Column="21" EndLine="63" EndColumn="71" Covered="True" />
+          <Statement FileIndex="22" Line="64" Column="21" EndLine="64" EndColumn="95" Covered="True" />
+          <Statement FileIndex="22" Line="68" Column="13" EndLine="68" EndColumn="91" Covered="True" />
+          <Statement FileIndex="22" Line="69" Column="9" EndLine="69" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseCreator" CoveredStatements="80" TotalStatements="80" CoveragePercent="100">
+        <Method Name=".ctor(Webserver.Response.IResponseHeaderParser,Webserver.IO.IFilePathProvider,Webserver.IO.IFileReader,Webserver.HTTPHeaders.IContentTypeHeaderProvider,Webserver.Response.IConfigRequestHandler):System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="26" Line="19" Column="9" EndLine="21" EndColumn="56" Covered="True" />
+          <Statement FileIndex="26" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="23" Column="13" EndLine="23" EndColumn="58" Covered="True" />
+          <Statement FileIndex="26" Line="24" Column="13" EndLine="24" EndColumn="50" Covered="True" />
+          <Statement FileIndex="26" Line="25" Column="13" EndLine="25" EndColumn="38" Covered="True" />
+          <Statement FileIndex="26" Line="26" Column="13" EndLine="26" EndColumn="68" Covered="True" />
+          <Statement FileIndex="26" Line="27" Column="13" EndLine="27" EndColumn="58" Covered="True" />
+          <Statement FileIndex="26" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create(Webserver.Request.RequestData):System.Byte[]" CoveredStatements="28" TotalStatements="28" CoveragePercent="100">
+          <Statement FileIndex="26" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="32" Column="13" EndLine="32" EndColumn="37" Covered="True" />
+          <Statement FileIndex="26" Line="33" Column="13" EndLine="33" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="34" Column="17" EndLine="34" EndColumn="94" Covered="True" />
+          <Statement FileIndex="26" Line="37" Column="13" EndLine="37" EndColumn="61" Covered="True" />
+          <Statement FileIndex="26" Line="38" Column="13" EndLine="38" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="39" Column="17" EndLine="39" EndColumn="85" Covered="True" />
+          <Statement FileIndex="26" Line="40" Column="17" EndLine="40" EndColumn="18" Covered="True" />
+          <Statement FileIndex="26" Line="41" Column="21" EndLine="44" EndColumn="23" Covered="True" />
+          <Statement FileIndex="26" Line="47" Column="21" EndLine="47" EndColumn="22" Covered="True" />
+          <Statement FileIndex="26" Line="48" Column="25" EndLine="48" EndColumn="118" Covered="True" />
+          <Statement FileIndex="26" Line="49" Column="25" EndLine="49" EndColumn="92" Covered="True" />
+          <Statement FileIndex="26" Line="50" Column="25" EndLine="51" EndColumn="70" Covered="True" />
+          <Statement FileIndex="26" Line="53" Column="21" EndLine="53" EndColumn="26" Covered="True" />
+          <Statement FileIndex="26" Line="54" Column="21" EndLine="54" EndColumn="22" Covered="True" />
+          <Statement FileIndex="26" Line="55" Column="25" EndLine="55" EndColumn="102" Covered="True" />
+          <Statement FileIndex="26" Line="59" Column="17" EndLine="59" EndColumn="100" Covered="True" />
+          <Statement FileIndex="26" Line="63" Column="13" EndLine="63" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="64" Column="17" EndLine="64" EndColumn="105" Covered="True" />
+          <Statement FileIndex="26" Line="66" Column="17" EndLine="69" EndColumn="19" Covered="True" />
+          <Statement FileIndex="26" Line="71" Column="17" EndLine="71" EndColumn="80" Covered="True" />
+          <Statement FileIndex="26" Line="73" Column="13" EndLine="73" EndColumn="42" Covered="True" />
+          <Statement FileIndex="26" Line="74" Column="13" EndLine="74" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="75" Column="17" EndLine="75" EndColumn="101" Covered="True" />
+          <Statement FileIndex="26" Line="77" Column="13" EndLine="77" EndColumn="18" Covered="True" />
+          <Statement FileIndex="26" Line="78" Column="13" EndLine="78" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="79" Column="17" EndLine="79" EndColumn="112" Covered="True" />
+          <Statement FileIndex="26" Line="81" Column="9" EndLine="81" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create(Webserver.Response.ResponseStatusLine):System.Byte[]" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="26" Line="84" Column="9" EndLine="84" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="85" Column="13" EndLine="85" EndColumn="51" Covered="True" />
+          <Statement FileIndex="26" Line="91" Column="17" EndLine="91" EndColumn="18" Covered="True" />
+          <Statement FileIndex="26" Line="92" Column="21" EndLine="95" EndColumn="23" Covered="True" />
+          <Statement FileIndex="26" Line="97" Column="21" EndLine="97" EndColumn="110" Covered="True" />
+          <Statement FileIndex="26" Line="101" Column="17" EndLine="101" EndColumn="18" Covered="True" />
+          <Statement FileIndex="26" Line="102" Column="21" EndLine="102" EndColumn="76" Covered="True" />
+          <Statement FileIndex="26" Line="105" Column="9" EndLine="105" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create(Webserver.Response.ResponseStatusLine,System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;,System.Collections.Generic.IReadOnlyList&lt;System.Byte&gt;):System.Byte[]" CoveredStatements="17" TotalStatements="17" CoveragePercent="100">
+          <Statement FileIndex="26" Line="131" Column="9" EndLine="131" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="132" Column="13" EndLine="132" EndColumn="80" Covered="True" />
+          <Statement FileIndex="26" Line="134" Column="13" EndLine="134" EndColumn="73" Covered="True" />
+          <Statement FileIndex="26" Line="135" Column="18" EndLine="135" EndColumn="27" Covered="True" />
+          <Statement FileIndex="26" Line="136" Column="13" EndLine="136" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="137" Column="17" EndLine="137" EndColumn="49" Covered="True" />
+          <Statement FileIndex="26" Line="138" Column="13" EndLine="138" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="135" Column="53" EndLine="135" EndColumn="56" Covered="True" />
+          <Statement FileIndex="26" Line="135" Column="29" EndLine="135" EndColumn="51" Covered="True" />
+          <Statement FileIndex="26" Line="140" Column="18" EndLine="140" EndColumn="27" Covered="True" />
+          <Statement FileIndex="26" Line="141" Column="13" EndLine="141" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="142" Column="17" EndLine="142" EndColumn="63" Covered="True" />
+          <Statement FileIndex="26" Line="143" Column="13" EndLine="143" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="140" Column="45" EndLine="140" EndColumn="48" Covered="True" />
+          <Statement FileIndex="26" Line="140" Column="29" EndLine="140" EndColumn="43" Covered="True" />
+          <Statement FileIndex="26" Line="145" Column="13" EndLine="145" EndColumn="32" Covered="True" />
+          <Statement FileIndex="26" Line="146" Column="9" EndLine="146" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create(Webserver.Response.ResponseStatusLine,System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;,System.String):System.Byte[]" CoveredStatements="19" TotalStatements="19" CoveragePercent="100">
+          <Statement FileIndex="26" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="True" />
+          <Statement FileIndex="26" Line="109" Column="13" EndLine="109" EndColumn="80" Covered="True" />
+          <Statement FileIndex="26" Line="111" Column="13" EndLine="111" EndColumn="60" Covered="True" />
+          <Statement FileIndex="26" Line="113" Column="13" EndLine="113" EndColumn="59" Covered="True" />
+          <Statement FileIndex="26" Line="115" Column="13" EndLine="115" EndColumn="82" Covered="True" />
+          <Statement FileIndex="26" Line="116" Column="18" EndLine="116" EndColumn="27" Covered="True" />
+          <Statement FileIndex="26" Line="117" Column="13" EndLine="117" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="118" Column="17" EndLine="118" EndColumn="49" Covered="True" />
+          <Statement FileIndex="26" Line="119" Column="13" EndLine="119" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="116" Column="53" EndLine="116" EndColumn="56" Covered="True" />
+          <Statement FileIndex="26" Line="116" Column="29" EndLine="116" EndColumn="51" Covered="True" />
+          <Statement FileIndex="26" Line="121" Column="18" EndLine="121" EndColumn="27" Covered="True" />
+          <Statement FileIndex="26" Line="122" Column="13" EndLine="122" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="123" Column="17" EndLine="123" EndColumn="71" Covered="True" />
+          <Statement FileIndex="26" Line="124" Column="13" EndLine="124" EndColumn="14" Covered="True" />
+          <Statement FileIndex="26" Line="121" Column="54" EndLine="121" EndColumn="57" Covered="True" />
+          <Statement FileIndex="26" Line="121" Column="29" EndLine="121" EndColumn="52" Covered="True" />
+          <Statement FileIndex="26" Line="126" Column="13" EndLine="126" EndColumn="32" Covered="True" />
+          <Statement FileIndex="26" Line="127" Column="9" EndLine="127" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseHeaderParser" CoveredStatements="25" TotalStatements="25" CoveragePercent="100">
+        <Method Name="Parse(Webserver.Response.ResponseStatusLine,System.Collections.Generic.IDictionary&lt;System.String,System.String&gt;):System.Byte[]" CoveredStatements="25" TotalStatements="25" CoveragePercent="100">
+          <Statement FileIndex="27" Line="12" Column="9" EndLine="12" EndColumn="10" Covered="True" />
+          <Statement FileIndex="27" Line="13" Column="13" EndLine="13" EndColumn="53" Covered="True" />
+          <Statement FileIndex="27" Line="15" Column="13" EndLine="15" EndColumn="62" Covered="True" />
+          <Statement FileIndex="27" Line="16" Column="13" EndLine="16" EndColumn="39" Covered="True" />
+          <Statement FileIndex="27" Line="17" Column="13" EndLine="17" EndColumn="70" Covered="True" />
+          <Statement FileIndex="27" Line="18" Column="13" EndLine="18" EndColumn="39" Covered="True" />
+          <Statement FileIndex="27" Line="19" Column="13" EndLine="19" EndColumn="94" Covered="True" />
+          <Statement FileIndex="27" Line="20" Column="13" EndLine="20" EndColumn="49" Covered="True" />
+          <Statement FileIndex="27" Line="22" Column="13" EndLine="22" EndColumn="33" Covered="True" />
+          <Statement FileIndex="27" Line="23" Column="13" EndLine="23" EndColumn="14" Covered="True" />
+          <Statement FileIndex="27" Line="24" Column="17" EndLine="24" EndColumn="24" Covered="True" />
+          <Statement FileIndex="27" Line="24" Column="46" EndLine="24" EndColumn="53" Covered="True" />
+          <Statement FileIndex="27" Line="24" Column="26" EndLine="24" EndColumn="42" Covered="True" />
+          <Statement FileIndex="27" Line="25" Column="17" EndLine="25" EndColumn="18" Covered="True" />
+          <Statement FileIndex="27" Line="26" Column="21" EndLine="26" EndColumn="47" Covered="True" />
+          <Statement FileIndex="27" Line="27" Column="21" EndLine="27" EndColumn="48" Covered="True" />
+          <Statement FileIndex="27" Line="28" Column="21" EndLine="28" EndColumn="49" Covered="True" />
+          <Statement FileIndex="27" Line="29" Column="21" EndLine="29" EndColumn="57" Covered="True" />
+          <Statement FileIndex="27" Line="30" Column="17" EndLine="30" EndColumn="18" Covered="True" />
+          <Statement FileIndex="27" Line="24" Column="43" EndLine="24" EndColumn="45" Covered="True" />
+          <Statement FileIndex="27" Line="31" Column="13" EndLine="31" EndColumn="14" Covered="True" />
+          <Statement FileIndex="27" Line="33" Column="13" EndLine="33" EndColumn="49" Covered="True" />
+          <Statement FileIndex="27" Line="35" Column="13" EndLine="35" EndColumn="83" Covered="True" />
+          <Statement FileIndex="27" Line="37" Column="13" EndLine="37" EndColumn="34" Covered="True" />
+          <Statement FileIndex="27" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseStatusLine" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+        <Method Name=".ctor(System.String,System.Net.HttpStatusCode):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="28" Line="5" Column="38" EndLine="5" EndColumn="52" Covered="True" />
+          <Statement FileIndex="28" Line="5" Column="54" EndLine="5" EndColumn="79" Covered="True" />
+          <Statement FileIndex="28" Line="5" Column="5" EndLine="5" EndColumn="81" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+  <Assembly Name="WebserverTests" CoveredStatements="478" TotalStatements="478" CoveragePercent="100">
+    <Namespace Name="WebserverTests.Config" CoveredStatements="62" TotalStatements="62" CoveragePercent="100">
+      <Type Name="ServerConfigManagerTests" CoveredStatements="36" TotalStatements="36" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="32" Line="14" Column="9" EndLine="14" EndColumn="68" Covered="True" />
+          <Statement FileIndex="32" Line="15" Column="9" EndLine="15" EndColumn="68" Covered="True" />
+          <Statement FileIndex="32" Line="17" Column="9" EndLine="17" EndColumn="42" Covered="True" />
+          <Statement FileIndex="32" Line="18" Column="9" EndLine="18" EndColumn="10" Covered="True" />
+          <Statement FileIndex="32" Line="19" Column="13" EndLine="19" EndColumn="92" Covered="True" />
+          <Statement FileIndex="32" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReadConfig_ShouldCreateNewConfig_WhenConfigFileDoesNotExist():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="32" Line="39" Column="9" EndLine="39" EndColumn="10" Covered="True" />
+          <Statement FileIndex="32" Line="40" Column="13" EndLine="40" EndColumn="105" Covered="True" />
+          <Statement FileIndex="32" Line="42" Column="13" EndLine="42" EndColumn="60" Covered="True" />
+          <Statement FileIndex="32" Line="44" Column="13" EndLine="44" EndColumn="109" Covered="True" />
+          <Statement FileIndex="32" Line="46" Column="13" EndLine="46" EndColumn="38" Covered="True" />
+          <Statement FileIndex="32" Line="47" Column="13" EndLine="47" EndColumn="58" Covered="True" />
+          <Statement FileIndex="32" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReadConfig_ShouldCreateNewConfig_WhenConfigFileIsNotJson():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="32" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
+          <Statement FileIndex="32" Line="53" Column="13" EndLine="53" EndColumn="114" Covered="True" />
+          <Statement FileIndex="32" Line="55" Column="13" EndLine="55" EndColumn="60" Covered="True" />
+          <Statement FileIndex="32" Line="57" Column="13" EndLine="57" EndColumn="109" Covered="True" />
+          <Statement FileIndex="32" Line="59" Column="13" EndLine="59" EndColumn="38" Covered="True" />
+          <Statement FileIndex="32" Line="60" Column="13" EndLine="60" EndColumn="58" Covered="True" />
+          <Statement FileIndex="32" Line="61" Column="9" EndLine="61" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ReadConfig_ShouldReturnConfig_WhenConfigFileExists():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="32" Line="24" Column="9" EndLine="24" EndColumn="10" Covered="True" />
+          <Statement FileIndex="32" Line="25" Column="13" EndLine="27" EndColumn="116" Covered="True" />
+          <Statement FileIndex="32" Line="29" Column="13" EndLine="29" EndColumn="82" Covered="True" />
+          <Statement FileIndex="32" Line="31" Column="13" EndLine="31" EndColumn="38" Covered="True" />
+          <Statement FileIndex="32" Line="32" Column="13" EndLine="32" EndColumn="51" Covered="True" />
+          <Statement FileIndex="32" Line="33" Column="13" EndLine="33" EndColumn="55" Covered="True" />
+          <Statement FileIndex="32" Line="34" Column="13" EndLine="34" EndColumn="58" Covered="True" />
+          <Statement FileIndex="32" Line="35" Column="9" EndLine="35" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="WriteConfig_ShouldNotWrite_WhenGivenNullConfig():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="32" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
+          <Statement FileIndex="32" Line="66" Column="13" EndLine="66" EndColumn="36" Covered="True" />
+          <Statement FileIndex="32" Line="68" Column="13" EndLine="68" EndColumn="94" Covered="True" />
+          <Statement FileIndex="32" Line="69" Column="9" EndLine="69" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="WriteConfig_ShouldWriteConfig_WhenGivenConfig():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="32" Line="73" Column="9" EndLine="73" EndColumn="10" Covered="True" />
+          <Statement FileIndex="32" Line="74" Column="13" EndLine="74" EndColumn="104" Covered="True" />
+          <Statement FileIndex="32" Line="76" Column="13" EndLine="79" EndColumn="31" Covered="True" />
+          <Statement FileIndex="32" Line="80" Column="9" EndLine="80" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ServerEventsTests" CoveredStatements="26" TotalStatements="26" CoveragePercent="100">
+        <Type Name="&lt;&gt;c__DisplayClass2_0" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Method Name="&lt;ChangeFilePath_ShouldTriggerEvent&gt;b__0(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+            <Statement FileIndex="33" Line="21" Column="13" EndLine="21" EndColumn="14" Covered="True" />
+            <Statement FileIndex="33" Line="22" Column="17" EndLine="22" EndColumn="48" Covered="True" />
+            <Statement FileIndex="33" Line="23" Column="17" EndLine="23" EndColumn="31" Covered="True" />
+            <Statement FileIndex="33" Line="24" Column="13" EndLine="24" EndColumn="14" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Method Name="&lt;ChangeState_ShouldTriggerEvent&gt;b__0(Webserver.Config.ServerState):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+            <Statement FileIndex="33" Line="40" Column="13" EndLine="40" EndColumn="14" Covered="True" />
+            <Statement FileIndex="33" Line="41" Column="17" EndLine="41" EndColumn="40" Covered="True" />
+            <Statement FileIndex="33" Line="42" Column="17" EndLine="42" EndColumn="31" Covered="True" />
+            <Statement FileIndex="33" Line="43" Column="13" EndLine="43" EndColumn="14" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="33" Line="10" Column="9" EndLine="10" EndColumn="35" Covered="True" />
+          <Statement FileIndex="33" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+          <Statement FileIndex="33" Line="12" Column="13" EndLine="12" EndColumn="39" Covered="True" />
+          <Statement FileIndex="33" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ChangeFilePath_ShouldTriggerEvent():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="33" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="33" Line="18" Column="13" EndLine="18" EndColumn="32" Covered="True" />
+          <Statement FileIndex="33" Line="20" Column="13" EndLine="24" EndColumn="15" Covered="True" />
+          <Statement FileIndex="33" Line="26" Column="13" EndLine="26" EndColumn="34" Covered="True" />
+          <Statement FileIndex="33" Line="27" Column="13" EndLine="27" EndColumn="45" Covered="True" />
+          <Statement FileIndex="33" Line="28" Column="13" EndLine="28" EndColumn="33" Covered="True" />
+          <Statement FileIndex="33" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="ChangeState_ShouldTriggerEvent(Webserver.Config.ServerState):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="33" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+          <Statement FileIndex="33" Line="37" Column="13" EndLine="37" EndColumn="32" Covered="True" />
+          <Statement FileIndex="33" Line="39" Column="13" EndLine="43" EndColumn="15" Covered="True" />
+          <Statement FileIndex="33" Line="45" Column="13" EndLine="45" EndColumn="34" Covered="True" />
+          <Statement FileIndex="33" Line="46" Column="13" EndLine="46" EndColumn="37" Covered="True" />
+          <Statement FileIndex="33" Line="47" Column="13" EndLine="47" EndColumn="33" Covered="True" />
+          <Statement FileIndex="33" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="WebserverTests.HTTPHeaders" CoveredStatements="52" TotalStatements="52" CoveragePercent="100">
+      <Type Name="ContentTypeHeaderProviderTests" CoveredStatements="52" TotalStatements="52" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="10" Column="9" EndLine="10" EndColumn="48" Covered="True" />
+          <Statement FileIndex="34" Line="11" Column="9" EndLine="11" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="12" Column="13" EndLine="12" EndColumn="52" Covered="True" />
+          <Statement FileIndex="34" Line="13" Column="9" EndLine="13" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnImageGif_WhenGivenPng():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="99" Column="9" EndLine="99" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="100" Column="13" EndLine="100" EndColumn="57" Covered="True" />
+          <Statement FileIndex="34" Line="102" Column="13" EndLine="102" EndColumn="47" Covered="True" />
+          <Statement FileIndex="34" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnImageJpg_WhenGivenJpgImage(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="117" Column="9" EndLine="117" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="118" Column="13" EndLine="118" EndColumn="66" Covered="True" />
+          <Statement FileIndex="34" Line="120" Column="13" EndLine="120" EndColumn="48" Covered="True" />
+          <Statement FileIndex="34" Line="121" Column="9" EndLine="121" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnImagePng_WhenGivenPng():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="91" Column="9" EndLine="91" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="92" Column="13" EndLine="92" EndColumn="57" Covered="True" />
+          <Statement FileIndex="34" Line="94" Column="13" EndLine="94" EndColumn="47" Covered="True" />
+          <Statement FileIndex="34" Line="95" Column="9" EndLine="95" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnImageTiff_WhenGivenTiff():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="107" Column="9" EndLine="107" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="108" Column="13" EndLine="108" EndColumn="58" Covered="True" />
+          <Statement FileIndex="34" Line="110" Column="13" EndLine="110" EndColumn="48" Covered="True" />
+          <Statement FileIndex="34" Line="111" Column="9" EndLine="111" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextCss_WhenGivenCssFile():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="49" Column="13" EndLine="49" EndColumn="57" Covered="True" />
+          <Statement FileIndex="34" Line="51" Column="13" EndLine="51" EndColumn="61" Covered="True" />
+          <Statement FileIndex="34" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextCsv_WhenGivenCsvFile():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="56" Column="9" EndLine="56" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="57" Column="13" EndLine="57" EndColumn="56" Covered="True" />
+          <Statement FileIndex="34" Line="59" Column="13" EndLine="59" EndColumn="61" Covered="True" />
+          <Statement FileIndex="34" Line="60" Column="9" EndLine="60" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextHtml_WhenGivenHtmlFile(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="75" Column="13" EndLine="75" EndColumn="60" Covered="True" />
+          <Statement FileIndex="34" Line="77" Column="13" EndLine="77" EndColumn="62" Covered="True" />
+          <Statement FileIndex="34" Line="78" Column="9" EndLine="78" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextHtml_WhenGivenRoot():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="82" Column="9" EndLine="82" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="83" Column="13" EndLine="83" EndColumn="44" Covered="True" />
+          <Statement FileIndex="34" Line="85" Column="13" EndLine="85" EndColumn="62" Covered="True" />
+          <Statement FileIndex="34" Line="86" Column="9" EndLine="86" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextPlain_WhenGivenEmptyString(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="22" Column="9" EndLine="22" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="23" Column="13" EndLine="23" EndColumn="49" Covered="True" />
+          <Statement FileIndex="34" Line="25" Column="13" EndLine="25" EndColumn="63" Covered="True" />
+          <Statement FileIndex="34" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextPlain_WhenGivenFileWithoutExtension():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="40" Column="9" EndLine="40" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="41" Column="13" EndLine="41" EndColumn="60" Covered="True" />
+          <Statement FileIndex="34" Line="43" Column="13" EndLine="43" EndColumn="63" Covered="True" />
+          <Statement FileIndex="34" Line="44" Column="9" EndLine="44" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextPlain_WhenGivenFileWithUnknownExtension(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="33" Column="13" EndLine="33" EndColumn="49" Covered="True" />
+          <Statement FileIndex="34" Line="35" Column="13" EndLine="35" EndColumn="63" Covered="True" />
+          <Statement FileIndex="34" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTextXml_WhenGivenXmlFile():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="34" Line="64" Column="9" EndLine="64" EndColumn="10" Covered="True" />
+          <Statement FileIndex="34" Line="65" Column="13" EndLine="65" EndColumn="58" Covered="True" />
+          <Statement FileIndex="34" Line="67" Column="13" EndLine="67" EndColumn="61" Covered="True" />
+          <Statement FileIndex="34" Line="68" Column="9" EndLine="68" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="WebserverTests.IO" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
+      <Type Name="FilePathProviderTests" CoveredStatements="63" TotalStatements="63" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="12" Column="9" EndLine="12" EndColumn="82" Covered="True" />
+          <Statement FileIndex="35" Line="14" Column="9" EndLine="14" EndColumn="39" Covered="True" />
+          <Statement FileIndex="35" Line="15" Column="9" EndLine="15" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="16" Column="13" EndLine="16" EndColumn="72" Covered="True" />
+          <Statement FileIndex="35" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnDefaultPage_WhenGivenDefaultPageName_AndRootFolderHasDefaultPage(System.String):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="35" Line="66" Column="9" EndLine="66" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="67" Column="13" EndLine="67" EndColumn="74" Covered="True" />
+          <Statement FileIndex="35" Line="69" Column="13" EndLine="69" EndColumn="42" Covered="True" />
+          <Statement FileIndex="35" Line="70" Column="13" EndLine="70" EndColumn="103" Covered="True" />
+          <Statement FileIndex="35" Line="72" Column="13" EndLine="72" EndColumn="62" Covered="True" />
+          <Statement FileIndex="35" Line="74" Column="13" EndLine="74" EndColumn="54" Covered="True" />
+          <Statement FileIndex="35" Line="75" Column="9" EndLine="75" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnDefaultPage_WhenGivenDefaultPageName_AndRootFolderHasNoDefaultPage(System.String):System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="51" Column="9" EndLine="51" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="52" Column="13" EndLine="52" EndColumn="42" Covered="True" />
+          <Statement FileIndex="35" Line="54" Column="13" EndLine="54" EndColumn="62" Covered="True" />
+          <Statement FileIndex="35" Line="56" Column="13" EndLine="56" EndColumn="90" Covered="True" />
+          <Statement FileIndex="35" Line="57" Column="9" EndLine="57" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnDefaultPage_WhenGivenDefaultPageName_AndRootFolderIsNotSet(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="35" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="39" Column="13" EndLine="39" EndColumn="62" Covered="True" />
+          <Statement FileIndex="35" Line="41" Column="13" EndLine="41" EndColumn="90" Covered="True" />
+          <Statement FileIndex="35" Line="42" Column="9" EndLine="42" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnEmptyString_WhenGivenEmptyPath(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="35" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="26" Column="13" EndLine="26" EndColumn="51" Covered="True" />
+          <Statement FileIndex="35" Line="28" Column="13" EndLine="28" EndColumn="40" Covered="True" />
+          <Statement FileIndex="35" Line="29" Column="9" EndLine="29" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathOfIndexHtml_WhenRootFolderIsGiven_AndIsGivenRootAsPath():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="137" Column="9" EndLine="137" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="138" Column="13" EndLine="138" EndColumn="46" Covered="True" />
+          <Statement FileIndex="35" Line="140" Column="13" EndLine="140" EndColumn="50" Covered="True" />
+          <Statement FileIndex="35" Line="142" Column="13" EndLine="142" EndColumn="84" Covered="True" />
+          <Statement FileIndex="35" Line="143" Column="9" EndLine="143" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathOfIndexHtml_WhenRootFolderIsNotGiven_AndIsGivenRootAsPath():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="35" Line="147" Column="9" EndLine="147" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="148" Column="13" EndLine="148" EndColumn="50" Covered="True" />
+          <Statement FileIndex="35" Line="150" Column="13" EndLine="150" EndColumn="54" Covered="True" />
+          <Statement FileIndex="35" Line="151" Column="9" EndLine="151" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathWithRootFolder_WhenRootFolderEndsWithBackSlash():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="127" Column="9" EndLine="127" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="128" Column="13" EndLine="128" EndColumn="48" Covered="True" />
+          <Statement FileIndex="35" Line="130" Column="13" EndLine="130" EndColumn="58" Covered="True" />
+          <Statement FileIndex="35" Line="132" Column="13" EndLine="132" EndColumn="83" Covered="True" />
+          <Statement FileIndex="35" Line="133" Column="9" EndLine="133" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathWithRootFolder_WhenRootFolderEndsWithSlash():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="117" Column="9" EndLine="117" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="118" Column="13" EndLine="118" EndColumn="47" Covered="True" />
+          <Statement FileIndex="35" Line="120" Column="13" EndLine="120" EndColumn="58" Covered="True" />
+          <Statement FileIndex="35" Line="122" Column="13" EndLine="122" EndColumn="83" Covered="True" />
+          <Statement FileIndex="35" Line="123" Column="9" EndLine="123" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathWithRootFolder_WhenRootFolderIsSet():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="87" Column="9" EndLine="87" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="88" Column="13" EndLine="88" EndColumn="66" Covered="True" />
+          <Statement FileIndex="35" Line="90" Column="13" EndLine="90" EndColumn="58" Covered="True" />
+          <Statement FileIndex="35" Line="92" Column="13" EndLine="92" EndColumn="89" Covered="True" />
+          <Statement FileIndex="35" Line="93" Column="9" EndLine="93" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathWithRootFolder_WhenRootFolderIsSet_AndPathBeginsWithBackSlash():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="107" Column="9" EndLine="107" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="108" Column="13" EndLine="108" EndColumn="46" Covered="True" />
+          <Statement FileIndex="35" Line="110" Column="13" EndLine="110" EndColumn="60" Covered="True" />
+          <Statement FileIndex="35" Line="112" Column="13" EndLine="112" EndColumn="83" Covered="True" />
+          <Statement FileIndex="35" Line="113" Column="9" EndLine="113" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnThePathWithRootFolder_WhenRootFolderIsSet_AndPathBeginsWithSlash():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="35" Line="97" Column="9" EndLine="97" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="98" Column="13" EndLine="98" EndColumn="46" Covered="True" />
+          <Statement FileIndex="35" Line="100" Column="13" EndLine="100" EndColumn="59" Covered="True" />
+          <Statement FileIndex="35" Line="102" Column="13" EndLine="102" EndColumn="83" Covered="True" />
+          <Statement FileIndex="35" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Provide_ShouldReturnTheSamePath_WhenRootFolderIsNotSet():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="35" Line="79" Column="9" EndLine="79" EndColumn="10" Covered="True" />
+          <Statement FileIndex="35" Line="80" Column="13" EndLine="80" EndColumn="67" Covered="True" />
+          <Statement FileIndex="35" Line="82" Column="13" EndLine="82" EndColumn="62" Covered="True" />
+          <Statement FileIndex="35" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="WebserverTests.Request" CoveredStatements="74" TotalStatements="74" CoveragePercent="100">
+      <Type Name="RequestParserTests" CoveredStatements="74" TotalStatements="74" CoveragePercent="100">
+        <Type Name="&lt;&gt;c__DisplayClass3_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Parse_ShouldThrowBadRequestException_WhenGivenEmptyRequest&gt;b__0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="36" Line="34" Column="54" EndLine="34" EndColumn="105" Covered="True" />
+          </Method>
+        </Type>
+        <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Parse_ShouldThrowBadRequestException_WhenGivenWrongRequest&gt;b__0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="36" Line="54" Column="54" EndLine="54" EndColumn="105" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="36" Line="13" Column="9" EndLine="13" EndColumn="36" Covered="True" />
+          <Statement FileIndex="36" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="15" Column="13" EndLine="15" EndColumn="40" Covered="True" />
+          <Statement FileIndex="36" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="&lt;Parse_ShouldThrowBadRequestException_WhenGivenNullRequest&gt;b__2_0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="36" Line="21" Column="72" EndLine="21" EndColumn="88" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldReturnRequestData_WhenProvidedWithRequestWithMultipleHeadersAndBody():System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="36" Line="137" Column="9" EndLine="137" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="141" Column="13" EndLine="141" EndColumn="83" Covered="True" />
+          <Statement FileIndex="36" Line="143" Column="13" EndLine="143" EndColumn="54" Covered="True" />
+          <Statement FileIndex="36" Line="144" Column="13" EndLine="144" EndColumn="61" Covered="True" />
+          <Statement FileIndex="36" Line="145" Column="13" EndLine="145" EndColumn="59" Covered="True" />
+          <Statement FileIndex="36" Line="146" Column="13" EndLine="146" EndColumn="56" Covered="True" />
+          <Statement FileIndex="36" Line="147" Column="13" EndLine="147" EndColumn="73" Covered="True" />
+          <Statement FileIndex="36" Line="148" Column="13" EndLine="148" EndColumn="70" Covered="True" />
+          <Statement FileIndex="36" Line="149" Column="13" EndLine="149" EndColumn="82" Covered="True" />
+          <Statement FileIndex="36" Line="150" Column="9" EndLine="150" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldReturnRequestData_WhenProvidedWithRequestWithMultipleHeadersAndNoBody():System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="36" Line="89" Column="9" EndLine="89" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="93" Column="13" EndLine="93" EndColumn="83" Covered="True" />
+          <Statement FileIndex="36" Line="95" Column="13" EndLine="95" EndColumn="54" Covered="True" />
+          <Statement FileIndex="36" Line="96" Column="13" EndLine="96" EndColumn="61" Covered="True" />
+          <Statement FileIndex="36" Line="97" Column="13" EndLine="97" EndColumn="59" Covered="True" />
+          <Statement FileIndex="36" Line="98" Column="13" EndLine="98" EndColumn="56" Covered="True" />
+          <Statement FileIndex="36" Line="99" Column="13" EndLine="99" EndColumn="73" Covered="True" />
+          <Statement FileIndex="36" Line="100" Column="13" EndLine="100" EndColumn="70" Covered="True" />
+          <Statement FileIndex="36" Line="101" Column="13" EndLine="101" EndColumn="43" Covered="True" />
+          <Statement FileIndex="36" Line="102" Column="9" EndLine="102" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldReturnRequestData_WhenProvidedWithRequestWithMultipleHeadersThatRepeatAndNoBody():System.Void" CoveredStatements="10" TotalStatements="10" CoveragePercent="100">
+          <Statement FileIndex="36" Line="106" Column="9" EndLine="106" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="110" Column="13" EndLine="110" EndColumn="83" Covered="True" />
+          <Statement FileIndex="36" Line="112" Column="13" EndLine="112" EndColumn="53" Covered="True" />
+          <Statement FileIndex="36" Line="113" Column="13" EndLine="113" EndColumn="51" Covered="True" />
+          <Statement FileIndex="36" Line="114" Column="13" EndLine="114" EndColumn="59" Covered="True" />
+          <Statement FileIndex="36" Line="115" Column="13" EndLine="115" EndColumn="56" Covered="True" />
+          <Statement FileIndex="36" Line="116" Column="13" EndLine="116" EndColumn="73" Covered="True" />
+          <Statement FileIndex="36" Line="117" Column="13" EndLine="117" EndColumn="72" Covered="True" />
+          <Statement FileIndex="36" Line="118" Column="13" EndLine="118" EndColumn="43" Covered="True" />
+          <Statement FileIndex="36" Line="119" Column="9" EndLine="119" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldReturnRequestData_WhenProvidedWithRequestWithNoHeadersAndBody():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="36" Line="123" Column="9" EndLine="123" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="126" Column="13" EndLine="126" EndColumn="83" Covered="True" />
+          <Statement FileIndex="36" Line="128" Column="13" EndLine="128" EndColumn="54" Covered="True" />
+          <Statement FileIndex="36" Line="129" Column="13" EndLine="129" EndColumn="61" Covered="True" />
+          <Statement FileIndex="36" Line="130" Column="13" EndLine="130" EndColumn="59" Covered="True" />
+          <Statement FileIndex="36" Line="131" Column="13" EndLine="131" EndColumn="47" Covered="True" />
+          <Statement FileIndex="36" Line="132" Column="13" EndLine="132" EndColumn="92" Covered="True" />
+          <Statement FileIndex="36" Line="133" Column="9" EndLine="133" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldReturnRequestData_WhenProvidedWithRequestWithNoHeadersAndNoBody():System.Void" CoveredStatements="8" TotalStatements="8" CoveragePercent="100">
+          <Statement FileIndex="36" Line="60" Column="9" EndLine="60" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="63" Column="13" EndLine="63" EndColumn="83" Covered="True" />
+          <Statement FileIndex="36" Line="65" Column="13" EndLine="65" EndColumn="53" Covered="True" />
+          <Statement FileIndex="36" Line="66" Column="13" EndLine="66" EndColumn="51" Covered="True" />
+          <Statement FileIndex="36" Line="67" Column="13" EndLine="67" EndColumn="59" Covered="True" />
+          <Statement FileIndex="36" Line="68" Column="13" EndLine="68" EndColumn="47" Covered="True" />
+          <Statement FileIndex="36" Line="69" Column="13" EndLine="69" EndColumn="43" Covered="True" />
+          <Statement FileIndex="36" Line="70" Column="9" EndLine="70" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldReturnRequestData_WhenProvidedWithRequestWithOneHeaderAndNoBody():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="36" Line="74" Column="9" EndLine="74" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="77" Column="13" EndLine="77" EndColumn="83" Covered="True" />
+          <Statement FileIndex="36" Line="79" Column="13" EndLine="79" EndColumn="53" Covered="True" />
+          <Statement FileIndex="36" Line="80" Column="13" EndLine="80" EndColumn="51" Covered="True" />
+          <Statement FileIndex="36" Line="81" Column="13" EndLine="81" EndColumn="59" Covered="True" />
+          <Statement FileIndex="36" Line="82" Column="13" EndLine="82" EndColumn="56" Covered="True" />
+          <Statement FileIndex="36" Line="83" Column="13" EndLine="83" EndColumn="73" Covered="True" />
+          <Statement FileIndex="36" Line="84" Column="13" EndLine="84" EndColumn="43" Covered="True" />
+          <Statement FileIndex="36" Line="85" Column="9" EndLine="85" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldThrowBadRequestException_WhenGivenEmptyRequest(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="36" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="33" Column="13" EndLine="34" EndColumn="107" Covered="True" />
+          <Statement FileIndex="36" Line="35" Column="13" EndLine="35" EndColumn="81" Covered="True" />
+          <Statement FileIndex="36" Line="36" Column="9" EndLine="36" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldThrowBadRequestException_WhenGivenNullRequest():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="36" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="21" Column="13" EndLine="21" EndColumn="90" Covered="True" />
+          <Statement FileIndex="36" Line="22" Column="13" EndLine="22" EndColumn="81" Covered="True" />
+          <Statement FileIndex="36" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Parse_ShouldThrowBadRequestException_WhenGivenWrongRequest(System.String):System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="36" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
+          <Statement FileIndex="36" Line="53" Column="13" EndLine="54" EndColumn="107" Covered="True" />
+          <Statement FileIndex="36" Line="55" Column="13" EndLine="55" EndColumn="81" Covered="True" />
+          <Statement FileIndex="36" Line="56" Column="9" EndLine="56" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+    <Namespace Name="WebserverTests.Response" CoveredStatements="227" TotalStatements="227" CoveragePercent="100">
+      <Type Name="ConfigRequestHandlerTests" CoveredStatements="49" TotalStatements="49" CoveragePercent="100">
+        <Type Name="&lt;&gt;c__DisplayClass4_0" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Method Name="&lt;Handle_ShouldThrowArgumentException_WhenGivenJsonFileWithWrongData&gt;b__0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+            <Statement FileIndex="37" Line="33" Column="52" EndLine="33" EndColumn="70" Covered="True" />
+          </Method>
+        </Type>
+        <Method Name=".ctor():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="37" Line="14" Column="9" EndLine="14" EndColumn="73" Covered="True" />
+          <Statement FileIndex="37" Line="16" Column="9" EndLine="16" EndColumn="43" Covered="True" />
+          <Statement FileIndex="37" Line="17" Column="9" EndLine="17" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="18" Column="13" EndLine="18" EndColumn="72" Covered="True" />
+          <Statement FileIndex="37" Line="19" Column="9" EndLine="19" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="&lt;Handle_ShouldThrowJsonException_WhenGivenInvalidJsonFile&gt;b__3_0():System.Object" CoveredStatements="1" TotalStatements="1" CoveragePercent="100">
+          <Statement FileIndex="37" Line="24" Column="48" EndLine="24" EndColumn="71" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldReturnInvalidCommand_WhenGivenRequestFromInvalidCommand():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="37" Line="67" Column="9" EndLine="67" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="70" Column="13" EndLine="70" EndColumn="97" Covered="True" />
+          <Statement FileIndex="37" Line="73" Column="13" EndLine="73" EndColumn="109" Covered="True" />
+          <Statement FileIndex="37" Line="74" Column="13" EndLine="74" EndColumn="107" Covered="True" />
+          <Statement FileIndex="37" Line="76" Column="13" EndLine="76" EndColumn="58" Covered="True" />
+          <Statement FileIndex="37" Line="77" Column="9" EndLine="77" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldReturnInvalidStatus_WhenGivenRequestForStatusChange(System.String):System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="37" Line="54" Column="9" EndLine="54" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="57" Column="13" EndLine="57" EndColumn="53" Covered="True" />
+          <Statement FileIndex="37" Line="59" Column="13" EndLine="59" EndColumn="109" Covered="True" />
+          <Statement FileIndex="37" Line="60" Column="13" EndLine="60" EndColumn="107" Covered="True" />
+          <Statement FileIndex="37" Line="62" Column="13" EndLine="62" EndColumn="58" Covered="True" />
+          <Statement FileIndex="37" Line="63" Column="9" EndLine="63" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldReturnPathChanged_WhenGivenRequestForPathChange():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="37" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="41" Column="13" EndLine="41" EndColumn="104" Covered="True" />
+          <Statement FileIndex="37" Line="44" Column="13" EndLine="44" EndColumn="109" Covered="True" />
+          <Statement FileIndex="37" Line="45" Column="13" EndLine="45" EndColumn="100" Covered="True" />
+          <Statement FileIndex="37" Line="47" Column="13" EndLine="47" EndColumn="58" Covered="True" />
+          <Statement FileIndex="37" Line="48" Column="9" EndLine="48" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldReturnStatusChangedToMaintenance_WhenGivenRequestForStatusChange():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="37" Line="81" Column="9" EndLine="81" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="84" Column="13" EndLine="84" EndColumn="96" Covered="True" />
+          <Statement FileIndex="37" Line="86" Column="13" EndLine="86" EndColumn="108" Covered="True" />
+          <Statement FileIndex="37" Line="87" Column="13" EndLine="87" EndColumn="107" Covered="True" />
+          <Statement FileIndex="37" Line="89" Column="13" EndLine="89" EndColumn="58" Covered="True" />
+          <Statement FileIndex="37" Line="90" Column="9" EndLine="90" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldReturnStatusChangedToRunning_WhenGivenRequestForStatusChange():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="37" Line="94" Column="9" EndLine="94" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="97" Column="13" EndLine="97" EndColumn="96" Covered="True" />
+          <Statement FileIndex="37" Line="99" Column="13" EndLine="99" EndColumn="104" Covered="True" />
+          <Statement FileIndex="37" Line="100" Column="13" EndLine="100" EndColumn="107" Covered="True" />
+          <Statement FileIndex="37" Line="102" Column="13" EndLine="102" EndColumn="58" Covered="True" />
+          <Statement FileIndex="37" Line="103" Column="9" EndLine="103" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldReturnStoppingServer_WhenGivenRequestForStatusChange():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="37" Line="107" Column="9" EndLine="107" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="110" Column="13" EndLine="110" EndColumn="96" Covered="True" />
+          <Statement FileIndex="37" Line="112" Column="13" EndLine="112" EndColumn="104" Covered="True" />
+          <Statement FileIndex="37" Line="113" Column="13" EndLine="113" EndColumn="107" Covered="True" />
+          <Statement FileIndex="37" Line="115" Column="13" EndLine="115" EndColumn="58" Covered="True" />
+          <Statement FileIndex="37" Line="116" Column="9" EndLine="116" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldThrowArgumentException_WhenGivenJsonFileWithWrongData(System.String):System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="37" Line="32" Column="9" EndLine="32" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="33" Column="13" EndLine="33" EndColumn="72" Covered="True" />
+          <Statement FileIndex="37" Line="34" Column="9" EndLine="34" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Handle_ShouldThrowJsonException_WhenGivenInvalidJsonFile():System.Void" CoveredStatements="3" TotalStatements="3" CoveragePercent="100">
+          <Statement FileIndex="37" Line="23" Column="9" EndLine="23" EndColumn="10" Covered="True" />
+          <Statement FileIndex="37" Line="24" Column="13" EndLine="24" EndColumn="73" Covered="True" />
+          <Statement FileIndex="37" Line="25" Column="9" EndLine="25" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseCreatorTests" CoveredStatements="152" TotalStatements="152" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="38" Line="21" Column="9" EndLine="21" EndColumn="88" Covered="True" />
+          <Statement FileIndex="38" Line="22" Column="9" EndLine="22" EndColumn="80" Covered="True" />
+          <Statement FileIndex="38" Line="23" Column="9" EndLine="23" EndColumn="68" Covered="True" />
+          <Statement FileIndex="38" Line="24" Column="9" EndLine="24" EndColumn="98" Covered="True" />
+          <Statement FileIndex="38" Line="25" Column="9" EndLine="25" EndColumn="88" Covered="True" />
+          <Statement FileIndex="38" Line="27" Column="9" EndLine="27" EndColumn="38" Covered="True" />
+          <Statement FileIndex="38" Line="28" Column="9" EndLine="28" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="29" Column="13" EndLine="30" EndColumn="114" Covered="True" />
+          <Statement FileIndex="38" Line="31" Column="9" EndLine="31" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenBadRequestStatusCode():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="38" Line="54" Column="9" EndLine="54" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="55" Column="13" EndLine="55" EndColumn="100" Covered="True" />
+          <Statement FileIndex="38" Line="56" Column="13" EndLine="56" EndColumn="75" Covered="True" />
+          <Statement FileIndex="38" Line="58" Column="13" EndLine="58" EndColumn="57" Covered="True" />
+          <Statement FileIndex="38" Line="60" Column="13" EndLine="60" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="61" Column="9" EndLine="61" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenInternalServerErrorStatusCode():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="38" Line="87" Column="9" EndLine="87" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="88" Column="13" EndLine="88" EndColumn="109" Covered="True" />
+          <Statement FileIndex="38" Line="89" Column="13" EndLine="89" EndColumn="84" Covered="True" />
+          <Statement FileIndex="38" Line="91" Column="13" EndLine="91" EndColumn="57" Covered="True" />
+          <Statement FileIndex="38" Line="93" Column="13" EndLine="93" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="94" Column="9" EndLine="94" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenMethodNotAllowedStatusCode():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="38" Line="76" Column="9" EndLine="76" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="77" Column="13" EndLine="77" EndColumn="106" Covered="True" />
+          <Statement FileIndex="38" Line="78" Column="13" EndLine="78" EndColumn="81" Covered="True" />
+          <Statement FileIndex="38" Line="80" Column="13" EndLine="80" EndColumn="57" Covered="True" />
+          <Statement FileIndex="38" Line="82" Column="13" EndLine="82" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="83" Column="9" EndLine="83" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenNotFoundStatusCode():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="38" Line="65" Column="9" EndLine="65" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="66" Column="13" EndLine="66" EndColumn="98" Covered="True" />
+          <Statement FileIndex="38" Line="67" Column="13" EndLine="67" EndColumn="73" Covered="True" />
+          <Statement FileIndex="38" Line="69" Column="13" EndLine="69" EndColumn="57" Covered="True" />
+          <Statement FileIndex="38" Line="71" Column="13" EndLine="71" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="72" Column="9" EndLine="72" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenNullRequestData():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="38" Line="98" Column="9" EndLine="98" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="99" Column="13" EndLine="99" EndColumn="118" Covered="True" />
+          <Statement FileIndex="38" Line="101" Column="13" EndLine="101" EndColumn="56" Covered="True" />
+          <Statement FileIndex="38" Line="103" Column="13" EndLine="103" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="104" Column="9" EndLine="104" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeFilePath():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="360" Column="9" EndLine="360" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="361" Column="13" EndLine="363" EndColumn="129" Covered="True" />
+          <Statement FileIndex="38" Line="365" Column="13" EndLine="368" EndColumn="78" Covered="True" />
+          <Statement FileIndex="38" Line="370" Column="13" EndLine="376" EndColumn="83" Covered="True" />
+          <Statement FileIndex="38" Line="379" Column="13" EndLine="383" EndColumn="104" Covered="True" />
+          <Statement FileIndex="38" Line="386" Column="13" EndLine="386" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="387" Column="9" EndLine="387" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToInvalidState():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="270" Column="9" EndLine="270" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="271" Column="13" EndLine="273" EndColumn="132" Covered="True" />
+          <Statement FileIndex="38" Line="275" Column="13" EndLine="278" EndColumn="81" Covered="True" />
+          <Statement FileIndex="38" Line="280" Column="13" EndLine="286" EndColumn="83" Covered="True" />
+          <Statement FileIndex="38" Line="289" Column="13" EndLine="293" EndColumn="97" Covered="True" />
+          <Statement FileIndex="38" Line="296" Column="13" EndLine="296" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="297" Column="9" EndLine="297" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToMaintenance():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="186" Column="9" EndLine="186" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="187" Column="13" EndLine="189" EndColumn="146" Covered="True" />
+          <Statement FileIndex="38" Line="191" Column="13" EndLine="193" EndColumn="95" Covered="True" />
+          <Statement FileIndex="38" Line="195" Column="13" EndLine="201" EndColumn="83" Covered="True" />
+          <Statement FileIndex="38" Line="203" Column="13" EndLine="207" EndColumn="96" Covered="True" />
+          <Statement FileIndex="38" Line="209" Column="13" EndLine="209" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="210" Column="9" EndLine="210" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToRunning():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="242" Column="9" EndLine="242" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="243" Column="13" EndLine="245" EndColumn="142" Covered="True" />
+          <Statement FileIndex="38" Line="247" Column="13" EndLine="249" EndColumn="91" Covered="True" />
+          <Statement FileIndex="38" Line="251" Column="13" EndLine="257" EndColumn="83" Covered="True" />
+          <Statement FileIndex="38" Line="259" Column="13" EndLine="263" EndColumn="96" Covered="True" />
+          <Statement FileIndex="38" Line="265" Column="13" EndLine="265" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="266" Column="9" EndLine="266" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_ChangeToStopped():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="214" Column="9" EndLine="214" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="215" Column="13" EndLine="217" EndColumn="132" Covered="True" />
+          <Statement FileIndex="38" Line="219" Column="13" EndLine="221" EndColumn="81" Covered="True" />
+          <Statement FileIndex="38" Line="223" Column="13" EndLine="229" EndColumn="83" Covered="True" />
+          <Statement FileIndex="38" Line="231" Column="13" EndLine="235" EndColumn="96" Covered="True" />
+          <Statement FileIndex="38" Line="237" Column="13" EndLine="237" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="238" Column="9" EndLine="238" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_WithJSONBodyButWrongItems(System.String):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="332" Column="9" EndLine="332" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="333" Column="13" EndLine="333" EndColumn="118" Covered="True" />
+          <Statement FileIndex="38" Line="335" Column="13" EndLine="337" EndColumn="46" Covered="True" />
+          <Statement FileIndex="38" Line="339" Column="13" EndLine="345" EndColumn="100" Covered="True" />
+          <Statement FileIndex="38" Line="348" Column="13" EndLine="352" EndColumn="53" Covered="True" />
+          <Statement FileIndex="38" Line="355" Column="13" EndLine="355" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="356" Column="9" EndLine="356" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenPOSTRequestToConfig_WithNotJSONBody():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="301" Column="9" EndLine="301" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="302" Column="13" EndLine="302" EndColumn="118" Covered="True" />
+          <Statement FileIndex="38" Line="304" Column="13" EndLine="306" EndColumn="42" Covered="True" />
+          <Statement FileIndex="38" Line="308" Column="13" EndLine="314" EndColumn="100" Covered="True" />
+          <Statement FileIndex="38" Line="317" Column="13" EndLine="321" EndColumn="66" Covered="True" />
+          <Statement FileIndex="38" Line="324" Column="13" EndLine="324" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="325" Column="9" EndLine="325" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenRequestThatGeneratesOtherKindOfException():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="140" Column="9" EndLine="140" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="141" Column="13" EndLine="142" EndColumn="120" Covered="True" />
+          <Statement FileIndex="38" Line="144" Column="13" EndLine="144" EndColumn="121" Covered="True" />
+          <Statement FileIndex="38" Line="145" Column="13" EndLine="145" EndColumn="109" Covered="True" />
+          <Statement FileIndex="38" Line="148" Column="13" EndLine="148" EndColumn="98" Covered="True" />
+          <Statement FileIndex="38" Line="150" Column="13" EndLine="150" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="151" Column="9" EndLine="151" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenRequestWithNotAllowedMethod(System.String):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="125" Column="9" EndLine="125" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="126" Column="13" EndLine="127" EndColumn="114" Covered="True" />
+          <Statement FileIndex="38" Line="129" Column="13" EndLine="129" EndColumn="116" Covered="True" />
+          <Statement FileIndex="38" Line="130" Column="13" EndLine="131" EndColumn="50" Covered="True" />
+          <Statement FileIndex="38" Line="133" Column="13" EndLine="133" EndColumn="96" Covered="True" />
+          <Statement FileIndex="38" Line="135" Column="13" EndLine="135" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="136" Column="9" EndLine="136" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenRequestWithTargetThatIsNotFound():System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="108" Column="9" EndLine="108" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="109" Column="13" EndLine="109" EndColumn="114" Covered="True" />
+          <Statement FileIndex="38" Line="111" Column="13" EndLine="111" EndColumn="116" Covered="True" />
+          <Statement FileIndex="38" Line="112" Column="13" EndLine="113" EndColumn="50" Covered="True" />
+          <Statement FileIndex="38" Line="115" Column="13" EndLine="115" EndColumn="95" Covered="True" />
+          <Statement FileIndex="38" Line="117" Column="13" EndLine="117" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="118" Column="9" EndLine="118" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenStatusCodeWithNoDefaultPage(System.Net.HttpStatusCode):System.Void" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="38" Column="9" EndLine="38" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="39" Column="13" EndLine="41" EndColumn="102" Covered="True" />
+          <Statement FileIndex="38" Line="42" Column="13" EndLine="42" EndColumn="85" Covered="True" />
+          <Statement FileIndex="38" Line="44" Column="13" EndLine="45" EndColumn="41" Covered="True" />
+          <Statement FileIndex="38" Line="47" Column="13" EndLine="47" EndColumn="57" Covered="True" />
+          <Statement FileIndex="38" Line="49" Column="13" EndLine="49" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="50" Column="9" EndLine="50" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldCreateByteArray_WhenGivenValidRequest():System.Void" CoveredStatements="9" TotalStatements="9" CoveragePercent="100">
+          <Statement FileIndex="38" Line="155" Column="9" EndLine="155" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="156" Column="13" EndLine="158" EndColumn="128" Covered="True" />
+          <Statement FileIndex="38" Line="160" Column="13" EndLine="161" EndColumn="51" Covered="True" />
+          <Statement FileIndex="38" Line="162" Column="13" EndLine="163" EndColumn="54" Covered="True" />
+          <Statement FileIndex="38" Line="164" Column="13" EndLine="165" EndColumn="93" Covered="True" />
+          <Statement FileIndex="38" Line="167" Column="13" EndLine="173" EndColumn="91" Covered="True" />
+          <Statement FileIndex="38" Line="175" Column="13" EndLine="179" EndColumn="21" Covered="True" />
+          <Statement FileIndex="38" Line="181" Column="13" EndLine="181" EndColumn="48" Covered="True" />
+          <Statement FileIndex="38" Line="182" Column="9" EndLine="182" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="GetBytesForBadRequest(Webserver.Response.ResponseStatusLine):System.Byte[]" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="390" Column="9" EndLine="390" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="391" Column="13" EndLine="393" EndColumn="122" Covered="True" />
+          <Statement FileIndex="38" Line="395" Column="13" EndLine="400" EndColumn="100" Covered="True" />
+          <Statement FileIndex="38" Line="402" Column="13" EndLine="402" EndColumn="108" Covered="True" />
+          <Statement FileIndex="38" Line="403" Column="13" EndLine="404" EndColumn="78" Covered="True" />
+          <Statement FileIndex="38" Line="405" Column="13" EndLine="405" EndColumn="34" Covered="True" />
+          <Statement FileIndex="38" Line="406" Column="9" EndLine="406" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="GetBytesForInternalServerError(Webserver.Response.ResponseStatusLine):System.Byte[]" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="428" Column="9" EndLine="428" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="429" Column="13" EndLine="431" EndColumn="153" Covered="True" />
+          <Statement FileIndex="38" Line="433" Column="13" EndLine="438" EndColumn="108" Covered="True" />
+          <Statement FileIndex="38" Line="440" Column="13" EndLine="440" EndColumn="108" Covered="True" />
+          <Statement FileIndex="38" Line="441" Column="13" EndLine="442" EndColumn="101" Covered="True" />
+          <Statement FileIndex="38" Line="444" Column="13" EndLine="444" EndColumn="34" Covered="True" />
+          <Statement FileIndex="38" Line="445" Column="9" EndLine="445" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="GetBytesForNotAllowedMethod(Webserver.Response.ResponseStatusLine):System.Byte[]" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="448" Column="9" EndLine="448" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="449" Column="13" EndLine="451" EndColumn="136" Covered="True" />
+          <Statement FileIndex="38" Line="453" Column="13" EndLine="458" EndColumn="107" Covered="True" />
+          <Statement FileIndex="38" Line="460" Column="13" EndLine="460" EndColumn="108" Covered="True" />
+          <Statement FileIndex="38" Line="461" Column="13" EndLine="462" EndColumn="85" Covered="True" />
+          <Statement FileIndex="38" Line="464" Column="13" EndLine="464" EndColumn="34" Covered="True" />
+          <Statement FileIndex="38" Line="465" Column="9" EndLine="465" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="GetBytesForNotFound(Webserver.Response.ResponseStatusLine):System.Byte[]" CoveredStatements="7" TotalStatements="7" CoveragePercent="100">
+          <Statement FileIndex="38" Line="409" Column="9" EndLine="409" EndColumn="10" Covered="True" />
+          <Statement FileIndex="38" Line="410" Column="13" EndLine="415" EndColumn="98" Covered="True" />
+          <Statement FileIndex="38" Line="417" Column="13" EndLine="417" EndColumn="108" Covered="True" />
+          <Statement FileIndex="38" Line="418" Column="13" EndLine="419" EndColumn="86" Covered="True" />
+          <Statement FileIndex="38" Line="421" Column="13" EndLine="423" EndColumn="128" Covered="True" />
+          <Statement FileIndex="38" Line="424" Column="13" EndLine="424" EndColumn="34" Covered="True" />
+          <Statement FileIndex="38" Line="425" Column="9" EndLine="425" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+      <Type Name="ResponseHeaderParserTests" CoveredStatements="26" TotalStatements="26" CoveragePercent="100">
+        <Method Name=".ctor():System.Void" CoveredStatements="4" TotalStatements="4" CoveragePercent="100">
+          <Statement FileIndex="39" Line="13" Column="9" EndLine="13" EndColumn="43" Covered="True" />
+          <Statement FileIndex="39" Line="14" Column="9" EndLine="14" EndColumn="10" Covered="True" />
+          <Statement FileIndex="39" Line="15" Column="13" EndLine="15" EndColumn="47" Covered="True" />
+          <Statement FileIndex="39" Line="16" Column="9" EndLine="16" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldReturnBytes_WhenGivenResponseWithMultipleHeaders():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="39" Line="56" Column="9" EndLine="56" EndColumn="10" Covered="True" />
+          <Statement FileIndex="39" Line="57" Column="13" EndLine="59" EndColumn="107" Covered="True" />
+          <Statement FileIndex="39" Line="61" Column="13" EndLine="65" EndColumn="15" Covered="True" />
+          <Statement FileIndex="39" Line="66" Column="13" EndLine="66" EndColumn="108" Covered="True" />
+          <Statement FileIndex="39" Line="68" Column="13" EndLine="68" EndColumn="48" Covered="True" />
+          <Statement FileIndex="39" Line="69" Column="9" EndLine="69" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldReturnBytes_WhenGivenResponseWithNoHeaders():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="39" Line="30" Column="9" EndLine="30" EndColumn="10" Covered="True" />
+          <Statement FileIndex="39" Line="31" Column="13" EndLine="31" EndColumn="84" Covered="True" />
+          <Statement FileIndex="39" Line="33" Column="13" EndLine="34" EndColumn="51" Covered="True" />
+          <Statement FileIndex="39" Line="36" Column="13" EndLine="36" EndColumn="48" Covered="True" />
+          <Statement FileIndex="39" Line="37" Column="9" EndLine="37" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldReturnBytes_WhenGivenResponseWithNullHeaders():System.Void" CoveredStatements="5" TotalStatements="5" CoveragePercent="100">
+          <Statement FileIndex="39" Line="20" Column="9" EndLine="20" EndColumn="10" Covered="True" />
+          <Statement FileIndex="39" Line="21" Column="13" EndLine="21" EndColumn="84" Covered="True" />
+          <Statement FileIndex="39" Line="23" Column="13" EndLine="23" EndColumn="97" Covered="True" />
+          <Statement FileIndex="39" Line="25" Column="13" EndLine="25" EndColumn="48" Covered="True" />
+          <Statement FileIndex="39" Line="26" Column="9" EndLine="26" EndColumn="10" Covered="True" />
+        </Method>
+        <Method Name="Create_ShouldReturnBytes_WhenGivenResponseWithOneHeader():System.Void" CoveredStatements="6" TotalStatements="6" CoveragePercent="100">
+          <Statement FileIndex="39" Line="41" Column="9" EndLine="41" EndColumn="10" Covered="True" />
+          <Statement FileIndex="39" Line="42" Column="13" EndLine="43" EndColumn="114" Covered="True" />
+          <Statement FileIndex="39" Line="45" Column="13" EndLine="48" EndColumn="15" Covered="True" />
+          <Statement FileIndex="39" Line="49" Column="13" EndLine="49" EndColumn="117" Covered="True" />
+          <Statement FileIndex="39" Line="51" Column="13" EndLine="51" EndColumn="48" Covered="True" />
+          <Statement FileIndex="39" Line="52" Column="9" EndLine="52" EndColumn="10" Covered="True" />
+        </Method>
+      </Type>
+    </Namespace>
+  </Assembly>
+</Root>

@@ -51,23 +51,17 @@ namespace Webserver.IO
 
             if (string.IsNullOrEmpty(_rootPath))
             {
-                if (IsDefaultPage(path))
-                {
-                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path);
-                }
-
-                return path;
+                return IsDefaultPage(path)
+                    ? Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path)
+                    : path;
             }
 
             var finalPath = Path.Combine(_rootPath, path);
             finalPath = HttpUtility.UrlDecode(finalPath);
 
-            if (IsDefaultPage(path))
+            if (IsDefaultPage(path) && !_filePathValidator.Validate(finalPath))
             {
-                if (!_filePathValidator.Validate(finalPath))
-                {
-                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path);
-                }
+                return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, DefaultPagesFolderName, path);
             }
 
             return finalPath;
