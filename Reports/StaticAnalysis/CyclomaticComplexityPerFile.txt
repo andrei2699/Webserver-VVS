@@ -1,0 +1,728 @@
+
+    [
+        {
+            "entity": "Config/IServerConfigManager.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/IServerConfigManager.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/IServerConfigManager.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/IServerConfigManager.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/IServerConfigManager.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/IServerEvents.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/IServerEvents.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/IServerEvents.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/IServerEvents.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/IServerEvents.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerConfig.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/ServerConfig.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/ServerConfig.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/ServerConfig.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "9"
+        },
+        {
+            "entity": "Config/ServerConfig.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerConfigManager.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/ServerConfigManager.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/ServerConfigManager.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Config/ServerConfigManager.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "4"
+        },
+        {
+            "entity": "Config/ServerConfigManager.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerEvents.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/ServerEvents.cs",
+            "tag": "metric.minCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/ServerEvents.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Config/ServerEvents.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "4"
+        },
+        {
+            "entity": "Config/ServerEvents.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerState.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerState.cs",
+            "tag": "metric.minCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerState.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerState.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Config/ServerState.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Exceptions/ServerException.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Exceptions/ServerException.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Exceptions/ServerException.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Exceptions/ServerException.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Exceptions/ServerException.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "HTTPHeaders/ContentTypeHeaderProvider.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "4"
+        },
+        {
+            "entity": "HTTPHeaders/ContentTypeHeaderProvider.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "HTTPHeaders/ContentTypeHeaderProvider.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "HTTPHeaders/ContentTypeHeaderProvider.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "5"
+        },
+        {
+            "entity": "HTTPHeaders/ContentTypeHeaderProvider.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "HTTPHeaders/IContentTypeHeaderProvider.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "HTTPHeaders/IContentTypeHeaderProvider.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "HTTPHeaders/IContentTypeHeaderProvider.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "HTTPHeaders/IContentTypeHeaderProvider.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "HTTPHeaders/IContentTypeHeaderProvider.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/FilePathProvider.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "9"
+        },
+        {
+            "entity": "IO/FilePathProvider.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FilePathProvider.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "3"
+        },
+        {
+            "entity": "IO/FilePathProvider.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "14"
+        },
+        {
+            "entity": "IO/FilePathProvider.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/FilePathValidator.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FilePathValidator.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FilePathValidator.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FilePathValidator.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FilePathValidator.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/FileReader.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileReader.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileReader.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileReader.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileReader.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/FileWriter.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileWriter.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileWriter.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileWriter.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/FileWriter.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/IFilePathProvider.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathProvider.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathProvider.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathProvider.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "IO/IFilePathProvider.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/IFilePathValidator.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathValidator.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathValidator.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathValidator.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFilePathValidator.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/IFileReader.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileReader.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileReader.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileReader.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileReader.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "IO/IFileWriter.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileWriter.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileWriter.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileWriter.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "IO/IFileWriter.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Program.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Program.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Program.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Program.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Program.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/IRequestParser.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Request/IRequestParser.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Request/IRequestParser.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Request/IRequestParser.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Request/IRequestParser.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/RequestData.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/RequestData.cs",
+            "tag": "metric.minCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/RequestData.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/RequestData.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/RequestData.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Request/RequestParser.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "10"
+        },
+        {
+            "entity": "Request/RequestParser.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Request/RequestParser.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "4"
+        },
+        {
+            "entity": "Request/RequestParser.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "20"
+        },
+        {
+            "entity": "Request/RequestParser.cs",
+            "tag": "metric.atc",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/ConfigRequestHandler.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "10"
+        },
+        {
+            "entity": "Response/ConfigRequestHandler.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/ConfigRequestHandler.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "5"
+        },
+        {
+            "entity": "Response/ConfigRequestHandler.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "11"
+        },
+        {
+            "entity": "Response/ConfigRequestHandler.cs",
+            "tag": "metric.atc",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IConfigRequestHandler.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IConfigRequestHandler.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IConfigRequestHandler.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IConfigRequestHandler.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IConfigRequestHandler.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/IResponseCreator.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseCreator.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseCreator.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseCreator.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Response/IResponseCreator.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/IResponseHeaderParser.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseHeaderParser.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseHeaderParser.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseHeaderParser.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/IResponseHeaderParser.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseCreator.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "6"
+        },
+        {
+            "entity": "Response/ResponseCreator.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Response/ResponseCreator.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "3"
+        },
+        {
+            "entity": "Response/ResponseCreator.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "19"
+        },
+        {
+            "entity": "Response/ResponseCreator.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseHeaderParser.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Response/ResponseHeaderParser.cs",
+            "tag": "metric.minCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Response/ResponseHeaderParser.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Response/ResponseHeaderParser.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "2"
+        },
+        {
+            "entity": "Response/ResponseHeaderParser.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseStatusLine.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseStatusLine.cs",
+            "tag": "metric.minCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseStatusLine.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseStatusLine.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "0"
+        },
+        {
+            "entity": "Response/ResponseStatusLine.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        },
+        {
+            "entity": "Server.cs",
+            "tag": "metric.maxCyclo",
+            "strength": "6"
+        },
+        {
+            "entity": "Server.cs",
+            "tag": "metric.minCyclo",
+            "strength": "1"
+        },
+        {
+            "entity": "Server.cs",
+            "tag": "metric.avgCyclo",
+            "strength": "3"
+        },
+        {
+            "entity": "Server.cs",
+            "tag": "metric.sumCyclo",
+            "strength": "18"
+        },
+        {
+            "entity": "Server.cs",
+            "tag": "metric.atc",
+            "strength": "0"
+        }
+    ]
