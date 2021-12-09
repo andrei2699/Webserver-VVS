@@ -54,7 +54,7 @@ namespace Webserver
 
             _listener = new TcpListener(IPAddress.Any, _serverConfig.Port);
             _listener.Start();
-            Console.WriteLine($"Web Server Running on {_serverConfig.Port.ToString()}...");
+            Console.WriteLine($"Web Server Running on {_serverConfig.Port}...");
 
             _threads = new List<Thread>();
             for (var i = 0; i < ThreadCount; i++)
@@ -69,6 +69,8 @@ namespace Webserver
             {
                 thread.Join();
             }
+
+            _listener.Stop();
 
             if (_serverConfig.State is ServerState.Running)
             {
@@ -94,7 +96,7 @@ namespace Webserver
                     thread.Interrupt();
                 }
 
-                Environment.Exit(0);
+                // Environment.Exit(0);
             }
         }
 
