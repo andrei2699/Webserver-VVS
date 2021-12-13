@@ -78,7 +78,7 @@ namespace WebserverGUI
                switchToMaintenanceCheckBox.Checked = false;
                portNumericUpDown.Enabled = true;
 
-               _serverEvents.ChangeState(ServerState.Stopped);
+               _serverEvents?.ChangeState(ServerState.Stopped);
           }
 
           private void switchToMaintenanceCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace WebserverGUI
                     ? ServerState.Maintenance
                     : ServerState.Running;
 
-               _serverEvents.ChangeState(state);
+               _serverEvents?.ChangeState(state);
           }
 
           private void openRootPathButton_Click(object sender, EventArgs e)

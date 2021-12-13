@@ -186,7 +186,7 @@ namespace WebserverGUI
                // 
                // maintenanceFilePathTextBox
                // 
-               this.maintenanceFilePathTextBox.Enabled = false;
+               this.maintenanceFilePathTextBox.Enabled = true;
                this.maintenanceFilePathTextBox.Location = new System.Drawing.Point(138, 77);
                this.maintenanceFilePathTextBox.Name = "maintenanceFilePathTextBox";
                this.maintenanceFilePathTextBox.Size = new System.Drawing.Size(252, 23);
@@ -194,7 +194,7 @@ namespace WebserverGUI
                // 
                // rootPathTextBox
                // 
-               this.rootPathTextBox.Enabled = false;
+               this.rootPathTextBox.Enabled = true;
                this.rootPathTextBox.Location = new System.Drawing.Point(138, 48);
                this.rootPathTextBox.Name = "rootPathTextBox";
                this.rootPathTextBox.Size = new System.Drawing.Size(252, 23);
