@@ -49,6 +49,8 @@ namespace WebserverGUI
                this.switchToMaintenanceCheckBox = new System.Windows.Forms.CheckBox();
                this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
                this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+               this.testConnectionButton = new System.Windows.Forms.Button();
+               this.connectionStatusLabel = new System.Windows.Forms.Label();
                this.groupBox1.SuspendLayout();
                ((System.ComponentModel.ISupportInitialize)(this.portNumericUpDown)).BeginInit();
                this.groupBox2.SuspendLayout();
@@ -186,7 +188,6 @@ namespace WebserverGUI
                // 
                // maintenanceFilePathTextBox
                // 
-               this.maintenanceFilePathTextBox.Enabled = true;
                this.maintenanceFilePathTextBox.Location = new System.Drawing.Point(138, 77);
                this.maintenanceFilePathTextBox.Name = "maintenanceFilePathTextBox";
                this.maintenanceFilePathTextBox.Size = new System.Drawing.Size(252, 23);
@@ -194,7 +195,6 @@ namespace WebserverGUI
                // 
                // rootPathTextBox
                // 
-               this.rootPathTextBox.Enabled = true;
                this.rootPathTextBox.Location = new System.Drawing.Point(138, 48);
                this.rootPathTextBox.Name = "rootPathTextBox";
                this.rootPathTextBox.Size = new System.Drawing.Size(252, 23);
@@ -248,11 +248,32 @@ namespace WebserverGUI
                // 
                this.openFileDialog1.FileName = "openFileDialog1";
                // 
+               // testConnectionButton
+               // 
+               this.testConnectionButton.Location = new System.Drawing.Point(18, 279);
+               this.testConnectionButton.Name = "testConnectionButton";
+               this.testConnectionButton.Size = new System.Drawing.Size(104, 34);
+               this.testConnectionButton.TabIndex = 6;
+               this.testConnectionButton.Text = "Test Connection";
+               this.testConnectionButton.UseVisualStyleBackColor = true;
+               this.testConnectionButton.Click += new System.EventHandler(this.testConnectionButton_Click);
+               // 
+               // connectionStatusLabel
+               // 
+               this.connectionStatusLabel.AutoSize = true;
+               this.connectionStatusLabel.Location = new System.Drawing.Point(128, 289);
+               this.connectionStatusLabel.Name = "connectionStatusLabel";
+               this.connectionStatusLabel.Size = new System.Drawing.Size(39, 15);
+               this.connectionStatusLabel.TabIndex = 7;
+               this.connectionStatusLabel.Text = "Status";
+               // 
                // Form1
                // 
                this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
                this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
                this.ClientSize = new System.Drawing.Size(750, 488);
+               this.Controls.Add(this.connectionStatusLabel);
+               this.Controls.Add(this.testConnectionButton);
                this.Controls.Add(this.groupBox2);
                this.Controls.Add(this.groupBox1);
                this.Controls.Add(this.stopServerButton);
@@ -267,6 +288,7 @@ namespace WebserverGUI
                this.groupBox2.ResumeLayout(false);
                this.groupBox2.PerformLayout();
                this.ResumeLayout(false);
+               this.PerformLayout();
 
           }
 
@@ -292,5 +314,7 @@ namespace WebserverGUI
           private System.Windows.Forms.Button applyChangesButton;
           private System.Windows.Forms.CheckBox switchToMaintenanceCheckBox;
           private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+          private System.Windows.Forms.Button testConnectionButton;
+          private System.Windows.Forms.Label connectionStatusLabel;
      }
 }

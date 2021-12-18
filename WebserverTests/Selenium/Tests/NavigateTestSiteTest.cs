@@ -28,7 +28,7 @@ namespace WebserverTests.Selenium.Tests
             driver.Quit();
         }
 
-        [Fact]
+        // [Fact(Skip = "Test")]
         public void NavigateTestSite()
         {
             driver.Navigate().GoToUrl("http://localhost:8089/a.html");

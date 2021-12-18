@@ -3,21 +3,21 @@
    <description></description>
    <name>Button(1)</name>
    <tag></tag>
-   <locator>/Window/Button[1]</locator>
+   <locator>/Window/Button[2]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
    <properties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ElementIndex</name>
       <type>Main</type>
-      <value>1</value>
+      <value>2</value>
    </properties>
    <properties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>RuntimeId</name>
       <type>Main</type>
-      <value>42,1249658</value>
+      <value>42,70826</value>
    </properties>
    <properties>
       <isSelected>false</isSelected>
@@ -59,14 +59,14 @@
       <matchCondition>equals</matchCondition>
       <name>ProcessId</name>
       <type>Main</type>
-      <value>25340</value>
+      <value>5572</value>
    </properties>
    <properties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>NativeWindowHandle</name>
       <type>Main</type>
-      <value>1249658</value>
+      <value>70826</value>
    </properties>
    <properties>
       <isSelected>false</isSelected>
@@ -115,7 +115,7 @@
       <matchCondition>equals</matchCondition>
       <name>BoundingRectangle</name>
       <type>Main</type>
-      <value>734,185,116,32</value>
+      <value>838,289,116,32</value>
    </properties>
    <properties>
       <isSelected>false</isSelected>
@@ -178,6 +178,6 @@
       <matchCondition>equals</matchCondition>
       <name>XPath</name>
       <type>Main</type>
-      <value>/Window/Button[1]</value>
+      <value>/Window/Button[2]</value>
    </properties>
 </WindowsElementEntity>

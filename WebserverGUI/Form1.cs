@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Net;
 using System.Threading;
 using System.Windows.Forms;
 using Webserver;
@@ -137,6 +138,21 @@ namespace WebserverGUI
 
 
                serverPortLabel.Text = portNumericUpDown.Value.ToString();
+          }
+
+          private void testConnectionButton_Click(object sender, EventArgs e)
+          {
+               try
+               {
+                    var web = new WebClient();
+                    var url = $"http://localhost:{serverPortLabel.Text}/a.html";
+                    web.DownloadString(url);
+                    connectionStatusLabel.Text = @"Started";
+               }
+               catch (Exception)
+               {
+                    connectionStatusLabel.Text = @"Not Started";
+               }
           }
      }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>StartMaintenanceStopServer</name>
+   <name>TestConnNotStarted</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a80b6271-233e-476d-9fa1-dfc51ae0c4a7</testCaseGuid>
+   <testCaseGuid>ac304e79-af71-423b-9a16-87c0a57a4d2c</testCaseGuid>
 </TestCaseEntity>

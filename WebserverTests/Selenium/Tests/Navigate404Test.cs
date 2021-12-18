@@ -26,7 +26,7 @@ namespace WebserverTests.Selenium.Tests
             driver.Quit();
         }
 
-        [Fact]
+        // [Fact(Skip = "Test")]
         public void Navigate404()
         {
             driver.Navigate().GoToUrl("http://localhost:8089/unknown.html");
